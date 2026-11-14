@@ -63,7 +63,7 @@ parameters:
   horizon:
     value: 32  # horizon * len(phase_counts) must be <= 128
   n_lags:
-    value: 0  # lagged prices did not improve the critic (SUMMARY.md, checks 2b)
+    value: 0  # lagged prices did not improve the critic (experiments/gp_critic/SUMMARY.md, checks 2b)
   n_gp:
     value: 1000
   refit_every:

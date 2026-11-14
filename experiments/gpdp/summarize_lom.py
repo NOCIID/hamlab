@@ -1,7 +1,7 @@
 """
-Summary table: GPDP in the configuration of reports/gpdp_report.tex (runs report_singlevgp_a1_s*) against the same configuration with
+Summary table: GPDP in the reference configuration of run_report_config.sh (runs report_singlevgp_a1_s*) against the same configuration with
 the GP law of motion (lom_s*: Bellman equation at the stations; lom_paths8_s*: at support paths
-simulated by the law of motion). Same metrics and convergence rule as reports/gpdp_report.tex.
+simulated by the law of motion). Metrics from step4_evaluate.py and relative_errors.py; converged once the clairvoyant gain from deviating is below 0.1%.
 
     python experiments/gpdp/summarize_lom.py
 """

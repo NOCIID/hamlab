@@ -8,4 +8,4 @@ gpdp/memlearn_v3_h_s1              value rel. err (honest cont / grid, t=0 mu0):
 gpdp/memlearn_v3_h_s2              value rel. err (honest cont / grid, t=0 mu0): 0.017% / 1.273%   policy rel. err: 2.24% / 11.67%   check None
 gpdp/memlearn_v3_h_s3              value rel. err (honest cont / grid, t=0 mu0): 0.009% / 1.282%   policy rel. err: 1.39% / 10.76%   check None
 gpdp/memlearn_v3_h_s4              value rel. err (honest cont / grid, t=0 mu0): 0.044% / 1.246%   policy rel. err: 0.98% / 10.56%   check None
-Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/relative_errors_memlearn_v3.json
+Saved experiments/gpdp/results/relative_errors_memlearn_v3.json

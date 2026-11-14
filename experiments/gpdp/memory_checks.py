@@ -1,6 +1,6 @@
 """
 Checks for the policy GP with a learned memory (hamlab/solvers/gpdp/memory.py), against a
-fixed population: the final rule of a GPDP run in the configuration of reports/gpdp_report.tex
+fixed population: the final rule of a GPDP run in the reference configuration of run_report_config.sh
 (policy GP over (z, K, T - t)).
 
 The backward pass gives the best shares on 8 training stations and on 8 held-out stations. The

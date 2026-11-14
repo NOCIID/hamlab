@@ -3,4 +3,4 @@ gpdp/jepalom_d16_s1                value rel. err (honest cont / grid, t=0 mu0):
 gpdp/jepalom_d16_s2                value rel. err (honest cont / grid, t=0 mu0): 0.108% / 1.236%   policy rel. err: 0.83% / 10.31%   check None
 gpdp/jepalom_d16_s3                value rel. err (honest cont / grid, t=0 mu0): 0.021% / 1.268%   policy rel. err: 0.49% / 10.22%   check None
 gpdp/jepalom_d16_s4                value rel. err (honest cont / grid, t=0 mu0): 0.008% / 1.288%   policy rel. err: 0.36% / 10.19%   check None
-Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/relative_errors_jepalom.json
+Saved experiments/gpdp/results/relative_errors_jepalom.json

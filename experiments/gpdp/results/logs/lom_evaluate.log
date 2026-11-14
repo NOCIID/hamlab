@@ -28,4 +28,4 @@ gpdp         gpdp/lom_paths8_s3               MFAX expl 0.3069 (1.863%)  nearest
 Using recurrent policy: True
 Using recurrent policy: True
 gpdp         gpdp/lom_paths8_s4               MFAX expl 0.3069 (1.863%)  nearest-grid 0.0270 (0.163%)  continuous clairvoyant 0.081%  honest 0.021%  grid honest -0.774%  K100 27.7
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/lom_evaluate.json
+Saved experiments/gpdp/results/lom_evaluate.json

@@ -13,4 +13,4 @@ gpdp         gpdp/jepalom_d16refit_s3         MFAX expl 0.3086 (1.873%)  nearest
 Using recurrent policy: True
 Using recurrent policy: True
 gpdp         gpdp/jepalom_d16refit_s4         MFAX expl 0.3046 (1.848%)  nearest-grid 0.0236 (0.143%)  continuous clairvoyant 0.085%  honest 0.025%  grid honest -0.771%  K100 27.8
-Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/jepalom_d16refit_evaluate.json
+Saved experiments/gpdp/results/jepalom_d16refit_evaluate.json

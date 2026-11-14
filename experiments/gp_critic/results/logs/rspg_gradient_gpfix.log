@@ -62,4 +62,4 @@ trained_policy {
     "noise_floor_rel_err": 0.055904004928356156
   }
 }
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gp_critic/results/gradient_rspg_gpfix.json
+Saved experiments/gp_critic/results/gradient_rspg_gpfix.json

@@ -13,4 +13,4 @@ gpdp         gpdp/memory_h8_only_s3           MFAX expl nan (nan%)  nearest-grid
 Using recurrent policy: True
 Using recurrent policy: True
 gpdp         gpdp/memory_h8_only_s4           MFAX expl nan (nan%)  nearest-grid 46.9963 (319.942%)  continuous clairvoyant nan%  honest nan%  grid honest nan%  K100 nan
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/check_memory_h_evaluate.json
+Saved experiments/gpdp/results/check_memory_h_evaluate.json

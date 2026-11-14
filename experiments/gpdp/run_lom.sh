@@ -1,5 +1,5 @@
 #!/bin/bash
-# GPDP in the configuration of reports/gpdp_report.tex (single value GP, alpha = 1, 20 iterations,
+# GPDP in the reference configuration of run_report_config.sh (single value GP, alpha = 1, 20 iterations,
 # 5 seeds) with a GP law of motion
 # for K and the closed-form expectation over (z', K') (gpdp/lom.py):
 #   lom_s*        Bellman equation solved at the stations' (z, K, t); K' from the law of motion

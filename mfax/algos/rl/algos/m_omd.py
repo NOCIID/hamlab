@@ -36,7 +36,7 @@ from mfax.algos.rl.sequence import mf_sequence  # noqa: E402
 from mfax.algos.rl.utils.make_act import SAQNetWrapper  # noqa: E402
 from mfax.envs import make_env  # noqa: E402
 from mfax.utils.nets.qnet import DiscreteQNet  # noqa: E402
-from utils import wandb_log_info, save_pkl  # noqa: E402
+from mfax.utils.io import wandb_log_info, save_pkl  # noqa: E402
 
 # --- for evaluation only, training uses sampled-based mean-field ---
 from mfax.algos.hsm.utils.mf_qnet_wrappers import MeanFieldQNet  # noqa: E402

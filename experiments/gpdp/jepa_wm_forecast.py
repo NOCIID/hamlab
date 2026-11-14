@@ -2,7 +2,7 @@
 Forecasting with the JEPA world model of the economy: two ways to improve the JEPA's forecasts,
 side by side, against the K law-of-motion GP.
 
-Encoders (latent size 8, trained on 64 economies of a fixed population, the final rule of a GPDP run in the configuration of reports/gpdp_report.tex):
+Encoders (latent size 8, trained on 64 economies of a fixed population, the final rule of a GPDP run in the reference configuration of run_report_config.sh):
     base   4-step training rollouts, 4000 steps (as in jepa_wm_checks.py)
     long   16-step training rollouts, 8000 steps (trained to forecast further)
 Predictors, for each encoder:

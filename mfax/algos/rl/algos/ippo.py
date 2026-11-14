@@ -32,7 +32,7 @@ from mfax.algos.rl.utils.make_act import SAActorWrapper, SAValueWrapper  # noqa:
 from mfax.envs import make_env  # noqa: E402
 from mfax.utils.nets.policy import DiscretePolicy, BetaPolicy  # noqa: E402
 from mfax.utils.nets.value import ValueNetwork  # noqa: E402
-from utils import wandb_log_info, save_pkl  # noqa: E402
+from mfax.utils.io import wandb_log_info, save_pkl  # noqa: E402
 
 # --- for evaluation only, training uses sampled-based mean-field ---
 from mfax.algos.hsm.exploitability import make_exploitability  # noqa: E402

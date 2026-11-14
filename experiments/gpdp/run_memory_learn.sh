@@ -1,5 +1,5 @@
 #!/bin/bash
-# GPDP in the configuration of reports/gpdp_report.tex (single value GP, alpha = 1, 20 iterations,
+# GPDP in the reference configuration of run_report_config.sh (single value GP, alpha = 1, 20 iterations,
 # 5 seeds) WITHOUT the date in the policy GP, and with a GRU learned together with the policy GP
 # instead (hamlab/solvers/gpdp/memory.py):
 #   memlearn_zkh_s*  policy GP inputs (z, K, h)

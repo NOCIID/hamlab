@@ -89,4 +89,4 @@ memory: {
   },
   "mean_consumption_share": 0.13182657957077026
 }
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gp_critic/results/critic_hsm_rspg_gp_gpfix_s0.json
+Saved experiments/gp_critic/results/critic_hsm_rspg_gp_gpfix_s0.json

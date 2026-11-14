@@ -28,4 +28,4 @@ gpdp         gpdp/memlearn_v3_h_s3            MFAX expl 0.3054 (1.853%)  nearest
 Using recurrent policy: True
 Using recurrent policy: True
 gpdp         gpdp/memlearn_v3_h_s4            MFAX expl 0.3097 (1.880%)  nearest-grid 0.0278 (0.168%)  continuous clairvoyant 0.105%  honest 0.045%  grid honest -0.752%  K100 27.9
-Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/memlearn_v3_evaluate.json
+Saved experiments/gpdp/results/memlearn_v3_evaluate.json

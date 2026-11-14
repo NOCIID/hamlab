@@ -1,5 +1,5 @@
 #!/bin/bash
-# The GPDP configuration described in reports/gpdp_report.tex: one value GP over (z, K, T - t) for all
+# The reference GPDP configuration: one value GP over (z, K, T - t) for all
 # periods, no blending (alpha = 1), policy GP over (z, K, T - t), continuous shares. 5 seeds,
 # evaluated every iteration (for convergence times), then the held-out evaluation and relative errors.
 # Usage (from the repository root):  PY=python caffeinate -i bash experiments/gpdp/run_report_config.sh

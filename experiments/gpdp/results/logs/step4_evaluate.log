@@ -56,4 +56,4 @@ Using recurrent policy: True
 Using recurrent policy: True
 Using recurrent policy: True
 hsm_rspg_gp  hsm_rspg_gp/gpfix_s4             MFAX expl 0.0396 (0.239%)  continuous clairvoyant 1.066%  honest 0.992%  K100 27.1
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/step4_evaluate.json
+Saved experiments/gpdp/results/step4_evaluate.json

@@ -1091,4 +1091,4 @@ hsm_rspg_gp/gp_s4_fast {
   },
   "mean_consumption_share": 0.07500000298023224
 }
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gp_critic/results/compare_rspg_all.json
+Saved experiments/gp_critic/results/compare_rspg_all.json

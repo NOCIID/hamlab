@@ -10,4 +10,4 @@ gpdp         gpdp/singlevgp_const15_a05_s2    MFAX expl 0.3047 (1.850%)  nearest
 Using recurrent policy: True
 Using recurrent policy: True
 gpdp         gpdp/singlevgp_const15_a05_s3    MFAX expl 0.3036 (1.843%)  nearest-grid 0.0196 (0.119%)  continuous clairvoyant 0.065%  honest 0.005%  grid honest -0.791%  K100 27.8
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/check_singlevgp_evaluate.json
+Saved experiments/gpdp/results/check_singlevgp_evaluate.json

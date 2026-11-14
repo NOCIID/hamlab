@@ -1,7 +1,7 @@
 """
 Checks for the law-of-motion GP and the closed-form expectation (hamlab/solvers/gpdp/lom.py),
 against a fixed population: the final policy of
-a GPDP run in the configuration of reports/gpdp_report.tex (single value GP, alpha = 1).
+a GPDP run in the reference configuration of run_report_config.sh (single value GP, alpha = 1).
 
 1. Law of motion: fitted on 8 stations, it predicts K_{t+1} on 64 fresh economies. Error, R^2 of
    K_{t+1} - K_t, calibration of its variance; compared with the Krusell-Smith log-linear rule

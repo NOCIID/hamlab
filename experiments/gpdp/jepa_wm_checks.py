@@ -1,6 +1,6 @@
 """
 Checks for the JEPA world model of the economy (hamlab/world_models/jepa/wm.py), against a fixed population: the final rule of
-a GPDP run in the configuration of reports/gpdp_report.tex.
+a GPDP run in the reference configuration of run_report_config.sh.
 
 A1. What the latent s = E(mu) learns, on held-out economies:
     - linear probes from s to capital K, the date (T - t) and the shock z (fitted on the training

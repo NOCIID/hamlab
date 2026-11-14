@@ -1,5 +1,5 @@
 {
-  "GPDP (configuration of reports/gpdp_report.tex)": {
+  "GPDP (reference configuration)": {
     "n_runs": 5,
     "mfax_exploitability_nearest": "0.027 \u00b1 0.008",
     "mfax_exploitability_split": "0.309 \u00b1 0.006",

@@ -8,4 +8,4 @@ gpdp/lom_paths8_s1                 value rel. err (honest cont / grid, t=0 mu0):
 gpdp/lom_paths8_s2                 value rel. err (honest cont / grid, t=0 mu0): 0.023% / 1.268%   policy rel. err: 0.38% / 10.20%   check None
 gpdp/lom_paths8_s3                 value rel. err (honest cont / grid, t=0 mu0): 0.032% / 1.259%   policy rel. err: 0.39% / 10.20%   check None
 gpdp/lom_paths8_s4                 value rel. err (honest cont / grid, t=0 mu0): 0.020% / 1.270%   policy rel. err: 0.42% / 10.20%   check None
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/relative_errors_lom.json
+Saved experiments/gpdp/results/relative_errors_lom.json

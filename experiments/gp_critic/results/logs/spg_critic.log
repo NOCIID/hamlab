@@ -72,4 +72,4 @@ lags=2: {
     0.2849999964237213
   ]
 }
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gp_critic/results/critic_hsm_spg_gp_gp_s0.json
+Saved experiments/gp_critic/results/critic_hsm_spg_gp_gp_s0.json

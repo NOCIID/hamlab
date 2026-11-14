@@ -3,4 +3,4 @@ deepham/deepham_gm1_s1             value rel. err (honest cont / grid, t=0 mu0):
 deepham/deepham_gm1_s2             value rel. err (honest cont / grid, t=0 mu0): 0.174% / 1.283%   policy rel. err: 1.64% / 10.60%   check None
 deepham/deepham_gm1_s3             value rel. err (honest cont / grid, t=0 mu0): 0.245% / 1.296%   policy rel. err: 2.06% / 10.72%   check None
 deepham/deepham_gm1_s4             value rel. err (honest cont / grid, t=0 mu0): 0.153% / 1.275%   policy rel. err: 1.52% / 10.50%   check None
-Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/relative_errors_deepham_gm1.json
+Saved experiments/gpdp/results/relative_errors_deepham_gm1.json

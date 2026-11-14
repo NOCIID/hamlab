@@ -20,4 +20,4 @@ hsm_rspg_gp/gpfix_s1               value rel. err (honest cont / grid, t=0 mu0):
 hsm_rspg_gp/gpfix_s2               value rel. err (honest cont / grid, t=0 mu0): 1.486% / 0.192%   policy rel. err: 14.38% / 9.82%   check 2.980232238769531e-07
 hsm_rspg_gp/gpfix_s3               value rel. err (honest cont / grid, t=0 mu0): 1.421% / 0.139%   policy rel. err: 14.30% / 9.33%   check 3.5762786865234375e-07
 hsm_rspg_gp/gpfix_s4               value rel. err (honest cont / grid, t=0 mu0): 1.477% / 0.187%   policy rel. err: 14.03% / 9.34%   check 2.980232238769531e-07
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/relative_errors.json
+Saved experiments/gpdp/results/relative_errors.json

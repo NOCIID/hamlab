@@ -1,7 +1,7 @@
 """
 Pre-train the frozen parts of the JEPA law of motion (hamlab/world_models/jepa/lom.py): the world model's encoder and the probe s -> K.
 
-Training data: the stations of every iteration of one GPDP run in the configuration of reports/gpdp_report.tex
+Training data: the stations of every iteration of one GPDP run in the reference configuration of run_report_config.sh
 (single value GP, alpha = 1, with the date), with a seed not used by the comparison runs: 20 iterations x 8
 economies, covering every population GPDP goes through, from the 15% start to the equilibrium.
 
@@ -43,7 +43,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def collect_stations(seed):
-    """Run GPDP (configuration of reports/gpdp_report.tex) and record each iteration's stations; also return the final rule."""
+    """Run GPDP (reference configuration, run_report_config.sh) and record each iteration's stations; also return the final rule."""
     stations = []
     original = gb.backward_pass_single
 

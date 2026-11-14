@@ -1,108 +1,147 @@
-<h1 align="center"> MFAX: Mean-Field Games in JAX </h1>
+<h1 align="center"> hamlab: heterogeneous-agent models and solvers in JAX </h1>
 
-## Environment Implementations
+hamlab solves heterogeneous-agent macroeconomic models, in which a continuum of households saves and
+consumes under idiosyncratic and aggregate risk, and prices depend on the whole wealth distribution.
+Several solution methods run on the same models and are scored by the same evaluation:
 
-Mean-Field Updates:
+- **GPDP**: Gaussian-process dynamic programming (backward induction with value and policy GPs);
+- **DeepHAM** (Han, Yang & E, *Quantitative Economics* 2026): neural policy and value functions of
+  generalized moments of the distribution;
+- **SPG / RSPG with a GP critic**: structural policy gradients whose truncated rollouts are valued by a
+  Gaussian process;
+- **SPG / RSPG**: the structural policy gradient methods of [MFAX](https://github.com/CWibault/mfax),
+  on which hamlab is built.
 
-- **Analytic/Push-forward**: Exact mean-field update using white-box access to the individual state transition dynamics.
-- **Sample-based**: Approximate mean-field update by sampling individual trajectories.
+## Setup
 
-Environments are implemented by creating:
+Python 3.10, then, from the repository root:
 
-1. A [`base class`](mfax/envs/base/base.py), specifying the deterministic next individual state of an agent given its action, its current individual state and the current aggregate state.  
-2. A mean-field update wrapper that is either a [`push-forward class`](mfax/envs/pushforward/base.py) or a [`sample-based class`](mfax/envs/sample/base.py), which handles updating the mean-field distribution. Push-forward environments only support shared observations of the aggregate state, while sample-based environments support individual observations of the aggregate state. Push-forward environments update the mean-field distribution and calculate the expectation over next states by using a functional representation of pre-multiplying by the (transpose of the) A matrix.  
-
-Currently, all environments are implemented with both a push-forward and sample-based mean-field update. As mentioned in our paper, push-forward updates are only possible if the state space is small enough and observations of the aggregate state are independent of the individual state.
-
-| Environment     | Base Class | Push-forward Wrapper | Sample-based Wrapper |
-| --- | --- | --- | --- |
-| Linear Quadratic| [`base_lq`](mfax/envs/base/toy/linear_quadratic.py) | [`pushforward_lq`](mfax/envs/pushforward/toy/linear_quadratic.py) | [`sample_lq`](mfax/envs/sample/toy/linear_quadratic.py) |
-| Beach Bar 1D    | [`base_bb`](mfax/envs/base/toy/beach_bar_1d.py)     | [`pushforward_bb`](mfax/envs/pushforward/toy/beach_bar_1d.py)   | [`sample_bb`](mfax/envs/sample/toy/beach_bar_1d.py)         |
-| Macroeconomics  | [`base_macro`](mfax/envs/base/macro/endogenous.py)    | [`pushforward_macro`](mfax/envs/pushforward/macro/endogenous.py)   | [`sample_macro`](mfax/envs/sample/macro/endogenous.py)         |
-
-
-## Algorithm Implementations
-We provide two types of algorithm implementations:
-1. **Hybrid Structural Methods (HSMs)**, which compute the exact expectation over individual states by assuming white-box access to the individual-state transition model. HSMs work with a push-forward mean-field environment implementation.  
-2. **Reinforcement Learning (RL)**, which does not assume access to the individual-state transition model. RL works with a sample-based mean-field environment implementation.
-
-All scripts use [Weights & Biases](https://wandb.ai) for logging. Hyper-parameter sweep files are provided in the `configs/` folder. After training, final models are saved to `.pkl` files in `runs/`.
-
-| Algorithm | Method Type | Name | Script | Citations |
-| --- | --- | --- | --- | --- |
-| SPG | HSM | Structural Policy Gradient | [`spg.py`](mfax/algos/hsm/algos/spg.py) | [Yang2025](https://arxiv.org/abs/2512.18892) |
-| RSPG | HSM | Recurrent Structural Policy Gradient | [`rspg.py`](mfax/algos/hsm/algos/rspg.py) | - |
-| M-OMD | RL | Deep Munchausen Online Mirror Descent | [`m_omd.py`](mfax/algos/rl/algos/m_omd.py) | [Lauriere2022](https://arxiv.org/abs/2203.11973), [Wu2025](https://arxiv.org/abs/2509.03030)|
-| IPPO | RL | Independent Proximal Policy Optimisation | [`ippo.py`](mfax/algos/rl/algos/ippo.py) | [Schulman2017](https://arxiv.org/abs/1707.06347), [SchroederdeWitt2020](https://arxiv.org/pdf/2011.09533), [Algumaei2023](https://arxiv.org/abs/2304.01547) |
-| RIPPO | RL | Recurrent Independent Proximal Policy Optimisation | [`rippo.py`](mfax/algos/rl/algos/rippo.py) | [Ni2022](https://arxiv.org/pdf/2110.05038) |
-
-## Evaluation
-
-We use exploitability to approximate the distance from a Nash equilibrium. Since currently all sampled-based environments also have a push-forward environment implementation, we also use backwards induction to approximate the exploitability for the sample-based environments. We have not yet implemented approximate exploitability metrics for purely sampled-based environments.
-
-Currently, like the HSM scripts, all RL scripts save mean-field agents, which determine action distributions for each individual state in the mean-field. For history-aware policies (e.g. RIPPO), this is only possible because the single-agent policy is structured in exactly the same way as the mean-field policy (i.e. only retaining a history of shared observations). If single-agent policies were to condition on individual histories, it would not be possible to restructure the single-agent policy as a mean-field policy. 
-
-The exploitability tuple returned includes an [`evaluation data-class`](mfax/algos/hsm/exploitability.py) (composed of the exploitability metrics, the mean-field trajectory generated by all agents following that policy, the policy discounted returns, and the best-response discounted returns) and an array of exploitabilities for each individual state. Following the literature, exploitability is calculated by weighting according to the initial mean-field distribution. 
-
-Evaluating a saved mean-field agent: 
-```python
-from mfax.algos.hsm.utils.make_act import MFActorWrapper, MFRecurrentActorWrapper
-from mfax.envs import make_env
-from mfax.algos.hsm.exploitability import exploitability
-
-# --- load the mean-field agent from the runs directory ---
-task = "beach_bar_1d"
-algo = "rspg"
-run = task + "/" + algo
-mf_agent = load_pkl(f"runs/{run}/mf_agent_wrapper.pkl")
-with open(f"runs/{run}/args.json", "r") as f:
-    train_args = json.load(f)
-
-# --- instantiate a push-forward environment to evaluate the exploitability --- 
-env = make_env("pushforward/" + task)
-
-# --- calculate the exploitability: compare the best-response to the learned policy ---
-results = exploitability(
-    jax.random.PRNGKey(0),                                  # seed
-    env,
-    mf_agent,
-    state_type=args["state_type"],                          # either raw states, or indices representing each state 
-    gamma=args["discount_factor"],                          # environment discount factor 
-    num_envs=8,                                             # number of evaluation environments
-    max_steps_in_episode=env.params.max_steps_in_episode,   # maximum steps in episode
-    )
-
-# --- access results ---
-eval_results = results[0] 
-exploitability = exploitability.exploitability
-mean_policy_disc_return = eval_results.exploitability.mean_policy_return  
-mean_br_disc_return = eval_results.exploitability.mean_br_return       
+```bash
+pip install -r requirements.txt
 ```
 
-## Quick-Start!
-1. Clone the repository using `git clone https://github.com/CWibault/mfax.git`. Optionally add a Weights & Biases key to the `dev` folder (or ensure that `log` is set to False). 
-2. Build the Docker image:
-   ```python
-   cd dev
-   bash build.sh
-3. Launch the Docker container:
-   ```python
-    cd ..
-    bash launch_container.sh 0  # If using GPU 0
-4. Run a script: 
-    ```python
-    python3.10 -m mfax.algos.hsm.algos.rspg
+## Running a solver
 
-## Contributing
-Please contribute! Ideas include: 
-1. Implementing more complex environments such as ones with individual agent observation functions or threshold-based reward functions.
-2. A third mean-field update wrapper supporting function approximation for the mean-field push-forward distribution.
+From the repository root:
 
-## Acknowledgements
-Our implementations of M-OMD, IPPO and RIPPO build off [PureJaxRL](https://arxiv.org/abs/2210.05639)'s DQN, PPO and Recurrent PPO implementations. 
+```bash
+python -m hamlab.solvers.gpdp --run-name my_gpdp --single-vgp --alpha 1.0   # one value GP, no blending
+python -m hamlab.solvers.deepham --run-name my_deepham                      # the paper's settings
+python -m hamlab.solvers.gp_critic.rspg_gp --run-name my_rspg               # RSPG with a GP critic
+python -m hamlab.solvers.gp_critic.spg_gp --run-name my_spg                 # SPG with a GP critic
+python -m mfax.algos.hsm.algos.rspg                                         # MFAX's own RSPG
+```
 
-## Citations
-If you use MFAX in your work, please cite the following paper! :
+Every solver takes `--model` (default `krusell_smith`) and lists its options with `--help`. Runs are
+saved in `runs/endogenous/<algo>/<run name>/` (`args.json`, `log.json`, and the agent pickle).
+
+## Models
+
+A model holds everything about one economy: its parameters, the grid of individual states, the
+budget constraint and utility, the idiosyncratic and aggregate shocks, the initial distribution and
+how prices follow from the distribution. Solvers use a model only through the interface in
+[`hamlab/models/base.py`](hamlab/models/base.py).
+
+```python
+from hamlab.models import make
+model = make("krusell_smith")               # default parameters
+model = make("krusell_smith", sigma=3.0)    # any parameter overridden
+```
+
+| Model | Economy |
+|---|---|
+| `krusell_smith` | households save in capital; Cobb–Douglas prices from average wealth and income; AR(1) productivity shock; 128 periods |
+| `huggett` | households save in bonds in zero net supply; the bond price clears the market each period; Markov aggregate and idiosyncratic income; infinite horizon truncated at 170 periods; the calibration of Yang, Wang, Schaab and Moll's *Structural Reinforcement Learning* ([arXiv:2512.18892](https://arxiv.org/abs/2512.18892)) |
+
+There are two kinds of model:
+- **`Model`, explicit prices** (`krusell_smith`): prices are a formula of the distribution and the
+  aggregate shock. Each such model is also an MFAX push-forward environment, so MFAX's algorithms
+  (SPG, RSPG) and its exploitability run on it, as do hamlab's solvers.
+- **`MarketClearingModel`** (`huggett`): the price is whatever clears a market, so it depends on what
+  households choose at that price. The households' policy is given at every point of a grid of
+  candidate prices; each period the model finds the clearing price (`clear`), then moves households
+  at that price (`period`, `push_forward`). hamlab's solvers do not handle these models yet.
+
+Each model is a folder with one file per economic block:
+
+```
+hamlab/models/
+  base.py              the interface every model implements
+  common/              blocks shared by models: grids.py, shocks.py (AR(1)), transitions.py
+  krusell_smith/
+    params.py          the calibration only (numbers and their meaning)
+    households.py      cash on hand, saving, utility, terminal rule
+    firms.py           production and factor prices
+    markets.py         capital = average wealth, labour = average income
+    shocks.py          aggregate productivity and idiosyncratic income moves
+    model.py           the blocks assembled over time; the only file that knows about MFAX
+  huggett/
+    params.py          the calibration only
+    households.py      cash on hand, consumption, bond purchases, utility; a closed-form starting policy
+    markets.py         total savings at each candidate price, the clearing price
+    shocks.py          aggregate income draws
+    model.py           the blocks assembled over time (clear, period, push_forward, step)
+```
+
+The economics files contain the equations as plain functions of states and parameters, so each one
+can be read and tested on its own. Each model reproduces its reference implementation exactly:
+`krusell_smith` MFAX's `endogenous` environment (`experiments/models/check_krusell_smith.py`),
+`huggett` the SRL tutorial code (`experiments/models/check_huggett.py`).
+
+**Adding a model:** create `hamlab/models/<name>/` with the same blocks (`params.py` for the
+calibration, one file per block of equations, `model.py` subclassing `Model` or
+`MarketClearingModel`), reuse `common/` where it fits, and register the model in
+`hamlab/models/__init__.py`.
+
+## Evaluating
+
+All solvers are scored by the same code, on 64 held-out economies:
+
+```bash
+python experiments/gpdp/step4_evaluate.py --runs runs/endogenous/gpdp/my_gpdp runs/endogenous/deepham/my_deepham
+python experiments/gpdp/relative_errors.py --runs runs/endogenous/gpdp/my_gpdp runs/endogenous/deepham/my_deepham
+```
+
+- **Exploitability (MFAX):** the gain of a best response on the 20 grid actions that knows the
+  realized aggregate shocks.
+- **Consumption-equivalent (CE) relative errors:** each value is converted into the constant
+  consumption giving the same lifetime utility, and the policy is compared with a best response
+  using continuous shares, state by state and period by period, in % of consumption
+  ([`hamlab/evaluation/metrics.py`](hamlab/evaluation/metrics.py)).
+
+## Experiments
+
+[experiments/](experiments/README.md) holds the checks, the batches that train and evaluate several
+seeds, and the scripts that summarize them. Its README lists the runs each batch creates and the runs
+each analysis script needs. The GP critic's method and results are written up in
+[experiments/gp_critic/SUMMARY.md](experiments/gp_critic/SUMMARY.md).
+
+## Repository layout
+
+| Folder | Contents |
+|---|---|
+| `hamlab/core/continuous.py` | continuous consumption shares for the Krusell–Smith economy: dynamics, rewards, best responses and values along given paths; used by GPDP, DeepHAM and the evaluation |
+| `hamlab/solvers/gpdp/` | GPDP: value GPs, a policy GP, an optional GP law of motion for capital, an optional policy GP with a learned memory |
+| `hamlab/solvers/deepham/` | DeepHAM: generalized moments, a windowed policy loss with fictitious play, value regression |
+| `hamlab/solvers/gp_critic/` | SPG / RSPG with a Gaussian-process critic |
+| `hamlab/world_models/jepa/` | a JEPA world model of the wealth distribution, and its use as GPDP's law of motion |
+| `hamlab/evaluation/` | consumption-equivalent accuracy measures shared by every solver, and loading of saved runs |
+| `hamlab/models/` | the economic models |
+| `experiments/` | checks, batches, summaries, and their saved results |
+| `configs/` | Weights & Biases sweep files |
+| `mfax/` | the MFAX library (see below) |
+| `runs/` | trained runs (created by the solvers, not versioned) |
+
+## Built on MFAX
+
+[MFAX](https://github.com/CWibault/mfax) is a JAX library of mean-field games. hamlab uses its
+push-forward environments (exact mean-field updates from the individual transition dynamics), its
+structural policy gradient methods (SPG, RSPG) and its exploitability evaluation. `mfax/` also
+contains MFAX's toy games (linear quadratic, beach bar) and its reinforcement-learning baselines
+(M-OMD, IPPO, RIPPO). The dependency goes one way: hamlab imports MFAX, MFAX never imports hamlab.
+
+If you use MFAX, please cite:
+
 ```bibtex
 @misc{wibault2026recurrent,
       title={Recurrent Structural Policy Gradient for Partially Observable Mean Field Games},
@@ -110,3 +149,6 @@ If you use MFAX in your work, please cite the following paper! :
       year={2026},
 }
 ```
+
+MFAX's M-OMD, IPPO and RIPPO build on [PureJaxRL](https://arxiv.org/abs/2210.05639)'s DQN, PPO and
+Recurrent PPO implementations.

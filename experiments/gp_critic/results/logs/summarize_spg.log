@@ -33,4 +33,4 @@
    consumption_share_by_block: {'mean': [0.1827, 0.146, 0.1337, 0.1281, 0.1247, 0.124, 0.1234], 'std': [0.0015, 0.0021, 0.0018, 0.0015, 0.0014, 0.0014, 0.0014]}
    dissaving_runs: 0
    permutation_p_exploitability_vs_base: 0.7
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gp_critic/results/seeds_spg.json
+Saved experiments/gp_critic/results/seeds_spg.json

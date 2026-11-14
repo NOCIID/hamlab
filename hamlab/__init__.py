@@ -10,5 +10,5 @@ baselines, and the exploitability evaluation. hamlab extends it:
     evaluation/    accuracy measures shared by every solver, and loading of saved runs
     models/        economic models: krusell_smith (explicit prices; also an MFAX environment) and
                    huggett (the bond price set by market clearing)
-See hamlab/README.md.
+See README.md at the repository root.
 """

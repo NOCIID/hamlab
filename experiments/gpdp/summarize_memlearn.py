@@ -1,7 +1,7 @@
 """
-Summary table: GPDP in the configuration of reports/gpdp_report.tex (policy GP over (z, K, T - t)) against GPDP without the date
+Summary table: GPDP in the reference configuration of run_report_config.sh (policy GP over (z, K, T - t)) against GPDP without the date
 and with a learned memory (memlearn_zkh_s*: inputs (z, K, h); memlearn_h_s*: h only; memlearn_v3_*:
-the same with the current defaults: minimum length scale 0.05, clipped logits). Same metrics and convergence rule as reports/gpdp_report.tex;
+the same with the current defaults: minimum length scale 0.05, clipped logits). Same metrics and convergence rule as summarize_lom.py;
 also how often an iteration blows up, and the share at period 126.
 
     python experiments/gpdp/summarize_memlearn.py

@@ -1,7 +1,7 @@
 """
-Summary table: DeepHAM (runs deepham_<tag>_s*) against GPDP in the configuration of
-reports/gpdp_report.tex (runs report_singlevgp_a1_s*), on the held-out evaluation of experiments/gpdp (64 economies, key 777):
-MFAX's exploitability (nearest grid action, as in that report), CE relative errors against the
+Summary table: DeepHAM (runs deepham_<tag>_s*) against GPDP in the reference configuration
+(experiments/gpdp/run_report_config.sh, runs report_singlevgp_a1_s*), on the held-out evaluation of experiments/gpdp (64 economies, key 777):
+MFAX's exploitability (nearest grid action), CE relative errors against the
 clairvoyant continuous best response, convergence time.
 
     python experiments/deepham/summarize_deepham.py [--tags gm1 fm1]
@@ -38,7 +38,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--tags", nargs="+", default=["gm1"])
     cli = p.parse_args()
-    groups = {"GPDP (configuration of reports/gpdp_report.tex)": ("gpdp", "report_singlevgp_a1_s", "report_evaluate.json", "relative_errors_report.json")}
+    groups = {"GPDP (reference configuration)": ("gpdp", "report_singlevgp_a1_s", "report_evaluate.json", "relative_errors_report.json")}
     for tag in cli.tags:
         groups[f"DeepHAM ({tag})"] = ("deepham", f"deepham_{tag}_s", f"deepham_{tag}_evaluate.json", f"relative_errors_deepham_{tag}.json")
     out = {}

@@ -3,4 +3,4 @@ gpdp/memory_h8_only_s1             value rel. err (honest cont / grid, t=0 mu0):
 gpdp/memory_h8_only_s2             value rel. err (honest cont / grid, t=0 mu0): nan% / nan%   policy rel. err: 5.95% / 13.83%   check None
 gpdp/memory_h8_only_s3             value rel. err (honest cont / grid, t=0 mu0): nan% / nan%   policy rel. err: nan% / nan%   check None
 gpdp/memory_h8_only_s4             value rel. err (honest cont / grid, t=0 mu0): nan% / nan%   policy rel. err: nan% / nan%   check None
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/relative_errors_memory_h.json
+Saved experiments/gpdp/results/relative_errors_memory_h.json

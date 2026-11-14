@@ -13,4 +13,4 @@ deepham      deepham/deepham_gm1_s3           MFAX expl 0.3935 (2.387%)  nearest
 Using recurrent policy: True
 Using recurrent policy: True
 deepham      deepham/deepham_gm1_s4           MFAX expl 0.3570 (2.165%)  nearest-grid 0.0734 (0.443%)  continuous clairvoyant 0.393%  honest 0.333%  grid honest -0.466%  K100 28.2
-Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/deepham_gm1_evaluate.json
+Saved experiments/gpdp/results/deepham_gm1_evaluate.json

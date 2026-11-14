@@ -10,7 +10,8 @@ comparison is exact equality, not a tolerance):
    rewards of every individual state for random shares; prices from a distribution and from
    aggregates.
 4. MFAX's evaluation: the exploitability of saved agents (RSPG, GPDP, DeepHAM) computed on either
-   environment.
+   environment. An agent that has not been trained yet is skipped, and the command that trains it
+   is printed.
 5. MFAX's own SPG: a few training steps from the same initialization on either environment.
 
     python experiments/models/check_krusell_smith.py
@@ -102,12 +103,18 @@ def main():
                           and same(mf._prices(s_mf.mu, s_mf.z), ks.prices_from_aggregates(s_ks.z, K, L))))
 
     # --- 4. MFAX's exploitability of saved agents, on either environment ---
-    runs = {
-        "RSPG": "runs/endogenous/hsm_rspg_gp/base_s0/mf_agent_wrapper.pkl",
-        "GPDP": "runs/endogenous/gpdp/report_singlevgp_a1_s0/gpdp_agent.pkl",
-        "DeepHAM": "runs/endogenous/deepham/deepham_gm1_s4/deepham_agent.pkl",
+    runs = {  # saved agent, and the command that trains it
+        "RSPG": ("runs/endogenous/hsm_rspg_gp/base_s0/mf_agent_wrapper.pkl",
+                 "python -m hamlab.solvers.gp_critic.rspg_gp --seed 0 --run-name base_s0 --no-use-gp --horizon 128 --phase-counts 8"),
+        "GPDP": ("runs/endogenous/gpdp/report_singlevgp_a1_s0/gpdp_agent.pkl",
+                 "python -m hamlab.solvers.gpdp --single-vgp --alpha 1.0 --num-iterations 20 --seed 0 --run-name report_singlevgp_a1_s0"),
+        "DeepHAM": ("runs/endogenous/deepham/deepham_gm1_s4/deepham_agent.pkl",
+                    "python -m hamlab.solvers.deepham --seed 4 --run-name deepham_gm1_s4"),
     }
-    for name, path in runs.items():
+    for name, (path, command) in runs.items():
+        if not (ROOT / path).exists():
+            print(f"SKIP  MFAX exploitability, {name} agent: no saved agent at {path}; train it with\n        {command}")
+            continue
         with open(ROOT / path, "rb") as f:
             agent = pickle.load(f)
         res = [

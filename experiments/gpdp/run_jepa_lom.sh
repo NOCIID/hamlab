@@ -1,5 +1,5 @@
 #!/bin/bash
-# GPDP in the configuration of reports/gpdp_report.tex (single value GP, alpha = 1, 20 iterations,
+# GPDP in the reference configuration of run_report_config.sh (single value GP, alpha = 1, 20 iterations,
 # 5 seeds) with tomorrow's K from the JEPA world model (forecasting only): a frozen encoder (latent size 16,
 # pre-trained by experiments/gpdp/jepa_wm_pretrain.py on a seed-5 GPDP run) + a latent GP law of
 # motion refitted each iteration + a probe s -> K. Decisions keep (z, K, T - t).

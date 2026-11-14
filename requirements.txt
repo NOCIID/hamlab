@@ -1,0 +1,11 @@
+jax==0.5.3
+jaxlib==0.5.3
+flax==0.10.5
+optax==0.2.3
+chex==0.1.86
+distrax==0.1.5
+gymnax==0.0.8
+tyro==0.7.3
+numpy==1.26.4
+wandb==0.17.3
+scipy==1.15.2

@@ -831,4 +831,4 @@ hsm_rspg_gp/gpfix_s0_repro {
   },
   "mean_consumption_share": 0.15192967653274536
 }
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gp_critic/results/compare_rspg_gp62.json
+Saved experiments/gp_critic/results/compare_rspg_gp62.json

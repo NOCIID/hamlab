@@ -34,7 +34,7 @@ from mfax.algos.hsm.utils.mf_policy_wrappers import (
 )  # noqa: E402
 from mfax.envs import make_env  # noqa: E402
 from mfax.envs.pushforward.base import PushforwardAggregateState  # noqa: E402
-from utils import wandb_log_info, save_pkl  # noqa: E402
+from mfax.utils.io import wandb_log_info, save_pkl  # noqa: E402
 
 
 @dataclass

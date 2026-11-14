@@ -13,4 +13,4 @@ gpdp         gpdp/notime_const15_a05_s3       MFAX expl 0.5622 (3.339%)  nearest
 Using recurrent policy: True
 Using recurrent policy: True
 gpdp         gpdp/notime_const15_a05_s4       MFAX expl 0.2829 (1.696%)  nearest-grid 0.0935 (0.561%)  continuous clairvoyant 0.652%  honest 0.591%  grid honest -0.264%  K100 20.7
-Saved /Users/guillen/Desktop/thesis/code/mfax/experiments/gpdp/results/check_time_evaluate.json
+Saved experiments/gpdp/results/check_time_evaluate.json
