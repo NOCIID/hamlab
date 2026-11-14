@@ -1,0 +1,85 @@
+seed 0: replayed, final rule vs saved run: max |weight difference| = 0.00e+00
+  k= 4 within-share [0.   0.01 0.07 0.21 0.75 0.85 0.98 1.  ] | CE loss next iteration: trained 6.666% zkh 25.938% zkhH1 4.228% zkhH2 7.050% zkhH4 32.000% zkt 5.022% zk 4.509%
+  k= 6 within-share [0.   0.   0.02 0.21 0.7  0.84 0.93 0.99] | CE loss next iteration: trained 3.632% zkh 3.538% zkhH1 5.716% zkhH2 4.375% zkhH4 6.286% zkt 0.077% zk 5.095%
+  k= 8 within-share [0.   0.   0.06 0.3  0.6  0.77 0.92 0.99] | CE loss next iteration: trained 6.773% zkh 4.909% zkhH1 12.928% zkhH2 10.978% zkhH4 3.618% zkt 3.267% zk 4.389%
+  k=10 within-share [0.   0.01 0.05 0.4  0.66 0.99 0.99 1.  ] | CE loss next iteration: trained 8.228% zkh 3.666% zkhH1 16.178% zkhH2 1.263% zkhH4 25.025% zkt 1.832% zk 4.560%
+  k=12 within-share [0.   0.05 0.18 0.69 0.76 0.9  1.   1.  ] | CE loss next iteration: trained 1.605% zkh 1.698% zkhH1 2.576% zkhH2 1.263% zkhH4 4.692% zkt 1.223% zk 1.700%
+  k=14 within-share [0.   0.   0.01 0.44 0.5  0.96 0.99 1.  ] | CE loss next iteration: trained 0.997% zkh 0.596% zkhH1 0.025% zkhH2 0.574% zkhH4 0.051% zkt 0.015% zk 1.739%
+  k=16 within-share [0.   0.   0.   0.01 0.33 0.75 0.99 1.  ] | CE loss next iteration: trained 1.909% zkh 2.244% zkhH1 0.964% zkhH2 2.987% zkhH4 1.378% zkt 1.045% zk 2.429%
+  k=18 within-share [0.   0.   0.   0.02 0.16 0.77 1.   1.  ] | CE loss next iteration: trained 0.057% zkh 0.043% zkhH1 0.018% zkhH2 0.020% zkhH4 0.160% zkt 0.008% zk 1.378%
+seed 1: replayed, final rule vs saved run: max |weight difference| = 0.00e+00
+  k= 4 within-share [0.   0.01 0.07 0.22 0.55 0.99 1.   1.  ] | CE loss next iteration: trained 0.877% zkh 0.999% zkhH1 2.743% zkhH2 17.823% zkhH4 1.372% zkt 0.081% zk 3.369%
+  k= 6 within-share [0.   0.   0.   0.02 0.27 0.73 0.99 1.  ] | CE loss next iteration: trained 0.188% zkh 0.194% zkhH1 0.790% zkhH2 0.225% zkhH4 0.224% zkt 0.016% zk 1.097%
+  k= 8 within-share [0.   0.   0.   0.01 0.24 0.5  0.93 1.  ] | CE loss next iteration: trained 0.265% zkh 0.279% zkhH1 0.075% zkhH2 0.148% zkhH4 0.217% zkt 0.173% zk 0.905%
+  k=10 within-share [0.   0.   0.01 0.03 0.21 0.28 1.   1.  ] | CE loss next iteration: trained 1.759% zkh 1.921% zkhH1 0.927% zkhH2 1.902% zkhH4 1.451% zkt 1.084% zk 2.007%
+  m_p, m_b = (w * V_p).sum(-1)[:-1], (w * V_b).sum(-1)[:-1]  # (T-1, N) population-weighted values
+  k=12 within-share [0.01 0.08 0.14 0.42 0.84 0.98 0.99 1.  ] | CE loss next iteration: trained 16.026% zkh 23.261% zkhH1 17.289% zkhH2 14.301% zkhH4 21.043% zkt nan% zk 9.927%
+  k=14 within-share [0.   0.   0.   0.03 0.49 0.87 0.99 1.  ] | CE loss next iteration: trained 0.120% zkh 0.125% zkhH1 0.971% zkhH2 2.848% zkhH4 13.205% zkt 0.113% zk 3.708%
+  k=16 within-share [0.   0.   0.01 0.05 0.49 0.98 0.99 1.  ] | CE loss next iteration: trained 3.966% zkh 3.017% zkhH1 9.339% zkhH2 1.232% zkhH4 3.126% zkt nan% zk 2.864%
+  k=18 within-share [0.   0.   0.04 0.1  0.36 0.71 0.87 1.  ] | CE loss next iteration: trained 1.609% zkh 1.643% zkhH1 5.149% zkhH2 1.116% zkhH4 1.585% zkt 0.029% zk 2.948%
+seed 2: replayed, final rule vs saved run: max |weight difference| = 0.00e+00
+  k= 4 within-share [0.   0.   0.   0.01 0.03 0.15 0.69 0.99] | CE loss next iteration: trained 0.092% zkh 0.170% zkhH1 0.042% zkhH2 0.774% zkhH4 0.092% zkt 0.069% zk 1.027%
+  k= 6 within-share [0.   0.02 0.12 0.2  0.29 0.53 0.97 1.  ] | CE loss next iteration: trained 3.858% zkh 3.654% zkhH1 0.911% zkhH2 3.106% zkhH4 2.308% zkt nan% zk 4.264%
+  k= 8 within-share [0.   0.01 0.06 0.45 0.52 0.93 0.99 1.  ] | CE loss next iteration: trained 4.373% zkh 3.535% zkhH1 15.524% zkhH2 17.914% zkhH4 13.167% zkt 9.089% zk 4.794%
+  k=10 within-share [0.   0.   0.05 0.55 0.69 0.89 0.96 1.  ] | CE loss next iteration: trained 8.629% zkh 5.859% zkhH1 9.669% zkhH2 3.815% zkhH4 2.720% zkt 14.423% zk 4.683%
+  k=12 within-share [0.   0.   0.06 0.33 0.72 0.91 0.98 0.99] | CE loss next iteration: trained 5.265% zkh 2.553% zkhH1 12.645% zkhH2 6.721% zkhH4 2.107% zkt 2.668% zk 4.199%
+  k=14 within-share [0.   0.   0.03 0.09 0.13 0.59 0.93 0.97] | CE loss next iteration: trained 1.676% zkh 1.749% zkhH1 8.203% zkhH2 7.391% zkhH4 6.224% zkt 3.606% zk 3.884%
+  k=16 within-share [0.   0.02 0.31 0.8  0.95 0.97 1.   1.  ] | CE loss next iteration: trained 10.617% zkh 5.901% zkhH1 7.516% zkhH2 12.391% zkhH4 8.809% zkt nan% zk 7.035%
+  k=18 within-share [0.   0.   0.05 0.76 0.91 0.99 0.99 1.  ] | CE loss next iteration: trained 1.437% zkh 2.550% zkhH1 3.693% zkhH2 9.345% zkhH4 4.216% zkt 2.038% zk 1.649%
+seed 3: replayed, final rule vs saved run: max |weight difference| = 0.00e+00
+  k= 4 within-share [0.   0.04 0.05 0.29 0.65 0.79 0.99 1.  ] | CE loss next iteration: trained 2.832% zkh 4.617% zkhH1 4.936% zkhH2 25.187% zkhH4 2.058% zkt 0.413% zk 5.666%
+  k= 6 within-share [0.   0.   0.03 0.31 0.52 0.56 0.97 1.  ] | CE loss next iteration: trained 2.032% zkh 2.390% zkhH1 1.094% zkhH2 2.093% zkhH4 0.780% zkt 0.043% zk 3.125%
+  k= 8 within-share [0.   0.   0.   0.02 0.03 0.23 0.98 1.  ] | CE loss next iteration: trained 0.188% zkh 0.399% zkhH1 0.565% zkhH2 0.720% zkhH4 0.174% zkt 0.144% zk 2.852%
+  k=10 within-share [0.   0.   0.   0.01 0.04 0.09 0.59 1.  ] | CE loss next iteration: trained 1.241% zkh 1.586% zkhH1 2.448% zkhH2 1.407% zkhH4 0.693% zkt 0.069% zk 2.133%
+  k=12 within-share [0.01 0.03 0.13 0.29 0.48 0.63 0.96 1.  ] | CE loss next iteration: trained 3.667% zkh 4.837% zkhH1 7.930% zkhH2 6.054% zkhH4 4.707% zkt 2.859% zk 4.811%
+  k=14 within-share [0.   0.01 0.11 0.52 0.86 0.97 0.98 1.  ] | CE loss next iteration: trained 1.588% zkh 1.715% zkhH1 7.625% zkhH2 1.289% zkhH4 1.814% zkt 0.041% zk 2.474%
+  k=16 within-share [0.   0.   0.01 0.02 0.38 0.88 0.97 1.  ] | CE loss next iteration: trained 0.794% zkh 0.798% zkhH1 0.547% zkhH2 0.549% zkhH4 0.349% zkt 0.462% zk 1.593%
+  k=18 within-share [0.   0.   0.   0.   0.05 0.44 0.95 1.  ] | CE loss next iteration: trained 0.132% zkh 0.168% zkhH1 0.084% zkhH2 0.042% zkhH4 0.070% zkt 0.251% zk 2.077%
+seed 4: replayed, final rule vs saved run: max |weight difference| = 0.00e+00
+  k= 4 within-share [0.   0.01 0.03 0.14 0.63 0.67 0.94 0.97] | CE loss next iteration: trained 5.046% zkh 4.382% zkhH1 4.107% zkhH2 4.191% zkhH4 11.819% zkt 0.922% zk 4.330%
+  k= 6 within-share [0.   0.   0.02 0.07 0.2  0.73 0.93 1.  ] | CE loss next iteration: trained 0.454% zkh 0.367% zkhH1 0.179% zkhH2 0.287% zkhH4 0.128% zkt 0.122% zk 1.419%
+  k= 8 within-share [0.   0.   0.   0.01 0.05 0.18 0.77 0.96] | CE loss next iteration: trained 0.274% zkh 0.272% zkhH1 0.251% zkhH2 0.266% zkhH4 0.331% zkt 0.110% zk 1.069%
+  k=10 within-share [0.   0.   0.   0.01 0.08 0.2  0.34 0.99] | CE loss next iteration: trained 0.097% zkh 0.106% zkhH1 1.625% zkhH2 1.434% zkhH4 0.163% zkt 0.032% zk 1.359%
+  k=12 within-share [0.   0.   0.   0.12 0.18 0.45 0.9  0.97] | CE loss next iteration: trained 0.984% zkh 1.079% zkhH1 1.998% zkhH2 2.286% zkhH4 1.366% zkt 0.027% zk 1.512%
+  k=14 within-share [0.   0.   0.04 0.27 0.79 0.85 1.   1.  ] | CE loss next iteration: trained 8.523% zkh 8.071% zkhH1 15.826% zkhH2 14.137% zkhH4 7.724% zkt nan% zk 15.362%
+  k=16 within-share [0.   0.   0.01 0.17 0.86 0.96 0.99 1.  ] | CE loss next iteration: trained 6.105% zkh 2.243% zkhH1 1.827% zkhH2 0.712% zkhH4 3.588% zkt 0.327% zk 5.196%
+  k=18 within-share [0.   0.   0.   0.01 0.04 0.64 1.   1.  ] | CE loss next iteration: trained 0.393% zkh 3.781% zkhH1 0.295% zkhH2 6.367% zkhH4 1.340% zkt 0.304% zk 5.019%
+{
+ "trained": {
+  "share_error": 0.006465480895712972,
+  "share_error_120_126": 0.08808065950870514,
+  "ce_loss_all_pct": 1.6427668333053589
+ },
+ "zkh": {
+  "share_error": 0.006400143960490823,
+  "share_error_120_126": 0.08578552305698395,
+  "ce_loss_all_pct": 2.0818963050842285
+ },
+ "zkhH1": {
+  "share_error": 0.007669860264286399,
+  "share_error_120_126": 0.08613190054893494,
+  "ce_loss_all_pct": 2.5118170976638794
+ },
+ "zkhH2": {
+  "share_error": 0.00549184437841177,
+  "share_error_120_126": 0.0695272907614708,
+  "ce_loss_all_pct": 2.1893426179885864
+ },
+ "zkhH4": {
+  "share_error": 0.00573001941666007,
+  "share_error_120_126": 0.07836982235312462,
+  "ce_loss_all_pct": 1.935873031616211
+ },
+ "zkt": {
+  "share_error": 0.0022554354509338737,
+  "share_error_120_126": 0.023575940169394016,
+  "ce_loss_all_pct": NaN
+ },
+ "zk": {
+  "share_error": 0.014692268334329128,
+  "share_error_120_126": 0.11313459277153015,
+  "ce_loss_all_pct": 3.036492705345154
+ }
+}
+median period error on the next iteration's economies (periods): {"h_1_most_invariant": {"all": 0.18651574803149606, "from_110": 0.8602941176470589}, "h_2_most_invariant": {"all": 0.1815944881889764, "from_110": 0.7610294117647058}, "h_4_most_invariant": {"all": 0.6117125984251969, "from_110": 0.9411764705882353}, "h_all": {"all": 1.9128937007874014, "from_110": 1.8272058823529411}}
+median within-period share per direction (most to least invariant): [0.0, 0.0009, 0.0234, 0.156, 0.4884, 0.7686, 0.984, 0.9984]

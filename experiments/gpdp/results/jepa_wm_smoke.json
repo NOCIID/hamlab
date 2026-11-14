@@ -1,0 +1,53 @@
+{
+  "run": "runs/endogenous/gpdp/report_singlevgp_a1_s0",
+  "steps": 500,
+  "rollout": 4,
+  "lam": 0.1,
+  "configs": {
+    "4:16": {
+      "fit_time_s": 8.70713033300126,
+      "final_loss": 0.006093935109674931,
+      "final_pred_mse": 0.0011853331234306097,
+      "final_sigreg": 0.04908602312207222,
+      "effective_rank": 2.939997126795065,
+      "probes": {
+        "K_linear_r2": 0.9855322543419911,
+        "K_quadratic_r2": 0.9975532233279673,
+        "time_left_linear_r2": 0.8287895033248494,
+        "time_left_quadratic_r2": 0.9966422873863681,
+        "z_linear_r2": 0.06626881163562892,
+        "z_quadratic_r2": 0.17595946977388865
+      },
+      "forecasts": {
+        "0_step_decode_rel_err_pct": 1.2107656622330747,
+        "1_step_mean_rel_err_pct": 0.847876731998207,
+        "5_step_mean_rel_err_pct": 1.3288979299373718,
+        "20_step_mean_rel_err_pct": 7.4093370961294065,
+        "open_loop_t127_rel_err_pct": 1493.2684365594034
+      },
+      "policy_gp": {
+        "z_s_tau": {
+          "share_error": 0.0021237791515886784,
+          "share_error_120_126": 0.022753218188881874,
+          "ce_loss_all_pct": 0.11981755495071411
+        },
+        "z_K_tau": {
+          "share_error": 0.0008417933713644743,
+          "share_error_120_126": 0.0021193933207541704,
+          "ce_loss_all_pct": 0.01583799161016941
+        },
+        "z_tau": {
+          "share_error": 0.0010481404606252909,
+          "share_error_120_126": 0.0026356647722423077,
+          "ce_loss_all_pct": 0.014041722752153873
+        }
+      }
+    }
+  },
+  "law_of_motion_gp_8_economies": {
+    "1_step_mean_rel_err_pct": 0.0023424349118638986,
+    "5_step_mean_rel_err_pct": 0.009480230012397383,
+    "20_step_mean_rel_err_pct": 0.019961142933803154,
+    "open_loop_t127_rel_err_pct": 0.0418566025776574
+  }
+}

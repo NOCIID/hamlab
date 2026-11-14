@@ -1,0 +1,6 @@
+gpdp/memlearn_v4a05_zkh_s0         value rel. err (honest cont / grid, t=0 mu0): 0.004% / 1.287%   policy rel. err: 0.31% / 10.20%   check None
+gpdp/memlearn_v4a05_zkh_s1         value rel. err (honest cont / grid, t=0 mu0): 0.006% / 1.286%   policy rel. err: 1.57% / 10.86%   check None
+gpdp/memlearn_v4a05_zkh_s2         value rel. err (honest cont / grid, t=0 mu0): 0.026% / 1.264%   policy rel. err: 2.42% / 11.42%   check None
+gpdp/memlearn_v4a05_zkh_s3         value rel. err (honest cont / grid, t=0 mu0): 0.007% / 1.284%   policy rel. err: 0.43% / 10.24%   check None
+gpdp/memlearn_v4a05_zkh_s4         value rel. err (honest cont / grid, t=0 mu0): 0.004% / 1.287%   policy rel. err: 0.83% / 10.45%   check None
+Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/relative_errors_memlearn_v4a05.json

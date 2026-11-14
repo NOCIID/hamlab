@@ -1,0 +1,16 @@
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/jepalom_d16_s0              MFAX expl 0.3136 (1.903%)  nearest-grid 0.0336 (0.203%)  continuous clairvoyant 0.112%  honest 0.052%  grid honest -0.743%  K100 27.9
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/jepalom_d16_s1              MFAX expl 0.3039 (1.844%)  nearest-grid 0.0215 (0.130%)  continuous clairvoyant 0.064%  honest 0.004%  grid honest -0.792%  K100 27.8
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/jepalom_d16_s2              MFAX expl 0.3339 (2.026%)  nearest-grid 0.1186 (0.716%)  continuous clairvoyant 0.174%  honest 0.113%  grid honest -0.683%  K100 27.7
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/jepalom_d16_s3              MFAX expl 0.3129 (1.900%)  nearest-grid 0.0302 (0.183%)  continuous clairvoyant 0.081%  honest 0.022%  grid honest -0.772%  K100 27.8
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/jepalom_d16_s4              MFAX expl 0.3013 (1.829%)  nearest-grid 0.0245 (0.148%)  continuous clairvoyant 0.063%  honest 0.003%  grid honest -0.793%  K100 27.8
+Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/jepalom_evaluate.json

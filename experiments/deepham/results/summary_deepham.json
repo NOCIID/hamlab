@@ -1,0 +1,78 @@
+{
+  "GPDP (configuration of reports/gpdp_report.tex)": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.027 \u00b1 0.008",
+    "mfax_exploitability_split": "0.309 \u00b1 0.006",
+    "gain_from_deviating_pct": "0.092 \u00b1 0.027",
+    "ce_relerr_t0_pct": "0.082 \u00b1 0.026",
+    "ce_relerr_all_periods_pct": "0.044 \u00b1 0.003",
+    "ce_relerr_all_periods_each": [
+      0.049,
+      0.043,
+      0.041,
+      0.043,
+      0.042
+    ],
+    "ce_relerr_by_block_pct": "0.059 \u00b7 0.052 \u00b7 0.043 \u00b7 0.026 \u00b7 0.020 \u00b7 0.011",
+    "policy_relerr_pct": "1.64 \u00b1 0.04",
+    "time_to_converge_s_each": [
+      22.1,
+      21.9,
+      22.1,
+      22.5,
+      23.2
+    ],
+    "converged_at_each": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "total_train_time_s": "81.8 \u00b1 0.5",
+    "capital_t100": "27.80 \u00b1 0.02"
+  },
+  "DeepHAM (gm1)": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.105 \u00b1 0.039",
+    "mfax_exploitability_split": "0.387 \u00b1 0.044",
+    "gain_from_deviating_pct": "0.583 \u00b1 0.244",
+    "ce_relerr_t0_pct": "0.292 \u00b1 0.105",
+    "ce_relerr_all_periods_pct": "0.268 \u00b1 0.172",
+    "ce_relerr_all_periods_each": [
+      0.206,
+      0.568,
+      0.18,
+      0.251,
+      0.137
+    ],
+    "ce_relerr_by_block_pct": "0.195 \u00b7 0.162 \u00b7 0.169 \u00b7 0.257 \u00b7 0.500 \u00b7 1.346",
+    "policy_relerr_pct": "2.65 \u00b1 0.39",
+    "time_to_converge_s_each": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "converged_at_each": [
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "total_train_time_s": "6274.1 \u00b1 22.1",
+    "capital_t100": "27.47 \u00b1 0.54",
+    "final_R2_of_K_on_Q": "0.6375 \u00b1 0.1452",
+    "final_R2_of_date_on_Q": "0.058 \u00b1 0.069",
+    "value_fit_valid_ce_relerr_pct_last": "6.935 \u00b1 2.540",
+    "non_finite_passes": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

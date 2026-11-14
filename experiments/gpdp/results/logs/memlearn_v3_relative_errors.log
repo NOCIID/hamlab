@@ -1,0 +1,11 @@
+gpdp/memlearn_v3_zkh_s0            value rel. err (honest cont / grid, t=0 mu0): 0.029% / 1.261%   policy rel. err: 0.50% / 10.25%   check None
+gpdp/memlearn_v3_zkh_s1            value rel. err (honest cont / grid, t=0 mu0): 0.034% / 1.258%   policy rel. err: 2.65% / 11.79%   check None
+gpdp/memlearn_v3_zkh_s2            value rel. err (honest cont / grid, t=0 mu0): 0.004% / 1.287%   policy rel. err: 0.80% / 10.48%   check None
+gpdp/memlearn_v3_zkh_s3            value rel. err (honest cont / grid, t=0 mu0): 0.004% / 1.287%   policy rel. err: 0.59% / 10.32%   check None
+gpdp/memlearn_v3_zkh_s4            value rel. err (honest cont / grid, t=0 mu0): 0.004% / 1.288%   policy rel. err: 0.82% / 10.51%   check None
+gpdp/memlearn_v3_h_s0              value rel. err (honest cont / grid, t=0 mu0): 0.043% / 1.247%   policy rel. err: 3.14% / 12.22%   check None
+gpdp/memlearn_v3_h_s1              value rel. err (honest cont / grid, t=0 mu0): 0.007% / 1.286%   policy rel. err: 1.13% / 10.72%   check None
+gpdp/memlearn_v3_h_s2              value rel. err (honest cont / grid, t=0 mu0): 0.017% / 1.273%   policy rel. err: 2.24% / 11.67%   check None
+gpdp/memlearn_v3_h_s3              value rel. err (honest cont / grid, t=0 mu0): 0.009% / 1.282%   policy rel. err: 1.39% / 10.76%   check None
+gpdp/memlearn_v3_h_s4              value rel. err (honest cont / grid, t=0 mu0): 0.044% / 1.246%   policy rel. err: 0.98% / 10.56%   check None
+Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/relative_errors_memlearn_v3.json

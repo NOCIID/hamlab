@@ -1,0 +1,39 @@
+it   0  train   28.0s  gain honest 21.497%  clairvoyant 21.566%  MFAX expl nan  K100 12.77  change 0.0411  CE all 12.572% end 41.31%  LoM R2 -0.516316 max err 18.999%
+Using recurrent policy: True
+it   1  train   38.4s  gain honest 4.209%  clairvoyant 4.470%  MFAX expl 0.6641  K100 28.52  change 0.0086  CE all 0.777% end 0.38%  LoM R2 -1.823829 max err 948.345%
+it   2  train   48.7s  gain honest 0.018%  clairvoyant 0.315%  MFAX expl 0.3916  K100 27.62  change 0.0032  CE all 0.315% end 0.19%  LoM R2 0.259510 max err 606.470%
+it   3  train   59.0s  gain honest nan%  clairvoyant nan%  MFAX expl 0.5470  K100 26.21  change 0.0186  CE all nan% end 0.18%  LoM R2 -0.435337 max err 759.384%
+it   4  train   69.5s  gain honest 21.638%  clairvoyant 21.952%  MFAX expl 1.5931  K100 13.90  change 0.0242  CE all 6.604% end 7.27%  LoM R2 -130.789223 max err 292.109%
+it   5  train   80.0s  gain honest -29.403%  clairvoyant 0.468%  MFAX expl 0.3460  K100 20.32  change 0.0382  CE all 0.854% end 0.41%  LoM R2 -3.515183 max err 1013.062%
+single value GP: non-finite solve at period 17, keeping the previous GP
+single value GP: non-finite solve at period 16, keeping the previous GP
+single value GP: non-finite solve at period 15, keeping the previous GP
+single value GP: non-finite solve at period 14, keeping the previous GP
+single value GP: non-finite solve at period 13, keeping the previous GP
+single value GP: non-finite solve at period 12, keeping the previous GP
+single value GP: non-finite solve at period 11, keeping the previous GP
+single value GP: non-finite solve at period 10, keeping the previous GP
+single value GP: non-finite solve at period 9, keeping the previous GP
+single value GP: non-finite solve at period 8, keeping the previous GP
+single value GP: non-finite solve at period 7, keeping the previous GP
+single value GP: non-finite solve at period 6, keeping the previous GP
+single value GP: non-finite solve at period 5, keeping the previous GP
+single value GP: non-finite solve at period 4, keeping the previous GP
+single value GP: non-finite solve at period 3, keeping the previous GP
+single value GP: non-finite solve at period 2, keeping the previous GP
+single value GP: non-finite solve at period 1, keeping the previous GP
+it   6  train   90.5s  gain honest nan%  clairvoyant nan%  MFAX expl 7.4625  K100 11.48  change 0.1354  CE all nan% end 1.75%  LoM R2 -386.571129 max err 2342.719%
+it   7  train  100.9s  gain honest 1174.481%  clairvoyant 1191.668%  MFAX expl 28.2845  K100 3.29  change 0.2225  CE all 39.103% end 9.23%  LoM R2 -501.766067 max err 1096.597%
+it   8  train  111.1s  gain honest -5.146%  clairvoyant 10.477%  MFAX expl 1.9392  K100 11.45  change 0.0713  CE all 7.278% end 3.76%  LoM R2 -42.012971 max err 1373.408%
+it   9  train  121.6s  gain honest 43.395%  clairvoyant 44.350%  MFAX expl 6.9224  K100 11.21  change 0.0631  CE all 25.479% end 2.05%  LoM R2 -606.432361 max err 5105.905%
+it  10  train  131.9s  gain honest 13.272%  clairvoyant 13.381%  MFAX expl 0.6732  K100 11.68  change 0.0216  CE all 5.817% end 4.74%  LoM R2 -92.995337 max err 2820.352%
+it  11  train  142.5s  gain honest 0.683%  clairvoyant 0.740%  MFAX expl 0.4043  K100 20.33  change 0.0228  CE all 7.383% end 47.81%  LoM R2 -19.785205 max err 13.595%
+it  12  train  152.9s  gain honest nan%  clairvoyant nan%  MFAX expl 0.3678  K100 27.68  change 0.0084  CE all nan% end nan%  LoM R2 0.237472 max err 34.755%
+it  13  train  163.2s  gain honest -0.053%  clairvoyant 0.059%  MFAX expl 0.3033  K100 27.07  change 0.0012  CE all 0.051% end 0.09%  LoM R2 0.709531 max err 401.267%
+it  14  train  173.9s  gain honest 0.064%  clairvoyant 0.159%  MFAX expl 0.3298  K100 27.50  change 0.0012  CE all 0.104% end 0.08%  LoM R2 0.863100 max err 62.612%
+it  15  train  184.4s  gain honest 0.073%  clairvoyant 0.155%  MFAX expl 0.3340  K100 25.14  change 0.0032  CE all 0.453% end 0.05%  LoM R2 -2.446439 max err 182.925%
+it  16  train  194.7s  gain honest 0.129%  clairvoyant 0.213%  MFAX expl 0.3253  K100 26.16  change 0.0048  CE all 0.477% end 1.52%  LoM R2 -2.282172 max err 1515.771%
+it  17  train  205.1s  gain honest nan%  clairvoyant nan%  MFAX expl 0.3629  K100 26.76  change 0.0038  CE all nan% end 2.45%  LoM R2 -1.702111 max err 189.969%
+it  18  train  215.5s  gain honest -0.046%  clairvoyant 0.067%  MFAX expl 0.3053  K100 27.44  change 0.0011  CE all 0.065% end 0.04%  LoM R2 0.963850 max err 58.385%
+it  19  train  226.2s  gain honest 0.096%  clairvoyant 0.174%  MFAX expl 0.3356  K100 27.27  change 0.0017  CE all 0.079% end 0.03%  LoM R2 0.940274 max err 113.001%
+Saved to runs/endogenous/gpdp/jepalom_d16_s2

@@ -1,0 +1,100 @@
+it   0  train   28.1s  gain honest 21.494%  clairvoyant 21.566%  MFAX expl nan  K100 12.77  change 0.0410  CE all 12.572% end 41.31%  LoM R2 -0.320705 max err 18.546%
+Using recurrent policy: True
+it   1  train   38.6s  gain honest -0.194%  clairvoyant 1.131%  MFAX expl 0.5232  K100 28.34  change 0.0358  CE all 0.423% end 0.20%  LoM R2 -0.596802 max err 275.201%
+it   2  train   49.0s  gain honest nan%  clairvoyant nan%  MFAX expl 36.1078  K100 15.63  change 0.0901  CE all nan% end 0.38%  LoM R2 -265.638878 max err 82640824046.815%
+it   3  train   59.4s  gain honest 3.299%  clairvoyant 4.151%  MFAX expl 0.9818  K100 5.09  change 0.0665  CE all 28.117% end 11.87%  LoM R2 -682.395420 max err 19751.298%
+it   4  train   69.7s  gain honest 0.799%  clairvoyant 1.422%  MFAX expl 0.4801  K100 17.01  change 0.0170  CE all 10.263% end 6.47%  LoM R2 -27.987793 max err 4067.541%
+it   5  train   79.9s  gain honest 0.397%  clairvoyant 0.906%  MFAX expl 0.3879  K100 15.62  change 0.0175  CE all 4.690% end 8.11%  LoM R2 -23.078579 max err 5177.994%
+it   6  train   90.2s  gain honest 0.431%  clairvoyant 0.489%  MFAX expl 0.3856  K100 26.22  change 0.0200  CE all 7.048% end 46.95%  LoM R2 -2.400311 max err 138.179%
+it   7  train  100.5s  gain honest nan%  clairvoyant nan%  MFAX expl 0.3112  K100 26.92  change 0.0037  CE all nan% end nan%  LoM R2 -0.215342 max err 333.625%
+it   8  train  110.8s  gain honest -0.048%  clairvoyant 0.101%  MFAX expl 0.3140  K100 26.87  change 0.0017  CE all 0.080% end 0.26%  LoM R2 0.480221 max err 529.153%
+single value GP: non-finite solve at period 26, keeping the previous GP
+single value GP: non-finite solve at period 25, keeping the previous GP
+single value GP: non-finite solve at period 24, keeping the previous GP
+single value GP: non-finite solve at period 23, keeping the previous GP
+single value GP: non-finite solve at period 22, keeping the previous GP
+single value GP: non-finite solve at period 21, keeping the previous GP
+single value GP: non-finite solve at period 20, keeping the previous GP
+single value GP: non-finite solve at period 19, keeping the previous GP
+single value GP: non-finite solve at period 18, keeping the previous GP
+single value GP: non-finite solve at period 17, keeping the previous GP
+single value GP: non-finite solve at period 16, keeping the previous GP
+single value GP: non-finite solve at period 15, keeping the previous GP
+single value GP: non-finite solve at period 14, keeping the previous GP
+single value GP: non-finite solve at period 13, keeping the previous GP
+single value GP: non-finite solve at period 12, keeping the previous GP
+single value GP: non-finite solve at period 11, keeping the previous GP
+single value GP: non-finite solve at period 10, keeping the previous GP
+single value GP: non-finite solve at period 9, keeping the previous GP
+single value GP: non-finite solve at period 8, keeping the previous GP
+single value GP: non-finite solve at period 7, keeping the previous GP
+single value GP: non-finite solve at period 6, keeping the previous GP
+single value GP: non-finite solve at period 5, keeping the previous GP
+single value GP: non-finite solve at period 4, keeping the previous GP
+single value GP: non-finite solve at period 3, keeping the previous GP
+single value GP: non-finite solve at period 2, keeping the previous GP
+single value GP: non-finite solve at period 1, keeping the previous GP
+it   9  train  121.1s  gain honest -99.649%  clairvoyant 0.504%  MFAX expl 0.4743  K100 26.78  change 0.0909  CE all 0.379% end 0.15%  LoM R2 0.669654 max err 400.584%
+it  10  train  131.2s  gain honest nan%  clairvoyant nan%  MFAX expl 20.7916  K100 23.96  change 0.0649  CE all nan% end 3.61%  LoM R2 -8.823869 max err 814.456%
+single value GP: non-finite solve at period 52, keeping the previous GP
+single value GP: non-finite solve at period 51, keeping the previous GP
+single value GP: non-finite solve at period 50, keeping the previous GP
+single value GP: non-finite solve at period 49, keeping the previous GP
+single value GP: non-finite solve at period 48, keeping the previous GP
+single value GP: non-finite solve at period 47, keeping the previous GP
+single value GP: non-finite solve at period 46, keeping the previous GP
+single value GP: non-finite solve at period 45, keeping the previous GP
+single value GP: non-finite solve at period 44, keeping the previous GP
+single value GP: non-finite solve at period 43, keeping the previous GP
+single value GP: non-finite solve at period 42, keeping the previous GP
+single value GP: non-finite solve at period 41, keeping the previous GP
+single value GP: non-finite solve at period 40, keeping the previous GP
+single value GP: non-finite solve at period 39, keeping the previous GP
+single value GP: non-finite solve at period 38, keeping the previous GP
+single value GP: non-finite solve at period 37, keeping the previous GP
+single value GP: non-finite solve at period 36, keeping the previous GP
+single value GP: non-finite solve at period 35, keeping the previous GP
+single value GP: non-finite solve at period 34, keeping the previous GP
+single value GP: non-finite solve at period 33, keeping the previous GP
+single value GP: non-finite solve at period 32, keeping the previous GP
+single value GP: non-finite solve at period 31, keeping the previous GP
+single value GP: non-finite solve at period 30, keeping the previous GP
+single value GP: non-finite solve at period 29, keeping the previous GP
+single value GP: non-finite solve at period 28, keeping the previous GP
+single value GP: non-finite solve at period 27, keeping the previous GP
+single value GP: non-finite solve at period 26, keeping the previous GP
+single value GP: non-finite solve at period 25, keeping the previous GP
+single value GP: non-finite solve at period 24, keeping the previous GP
+single value GP: non-finite solve at period 23, keeping the previous GP
+single value GP: non-finite solve at period 22, keeping the previous GP
+single value GP: non-finite solve at period 21, keeping the previous GP
+single value GP: non-finite solve at period 20, keeping the previous GP
+single value GP: non-finite solve at period 19, keeping the previous GP
+single value GP: non-finite solve at period 18, keeping the previous GP
+single value GP: non-finite solve at period 17, keeping the previous GP
+single value GP: non-finite solve at period 16, keeping the previous GP
+single value GP: non-finite solve at period 15, keeping the previous GP
+single value GP: non-finite solve at period 14, keeping the previous GP
+single value GP: non-finite solve at period 13, keeping the previous GP
+single value GP: non-finite solve at period 12, keeping the previous GP
+single value GP: non-finite solve at period 11, keeping the previous GP
+single value GP: non-finite solve at period 10, keeping the previous GP
+single value GP: non-finite solve at period 9, keeping the previous GP
+single value GP: non-finite solve at period 8, keeping the previous GP
+single value GP: non-finite solve at period 7, keeping the previous GP
+single value GP: non-finite solve at period 6, keeping the previous GP
+single value GP: non-finite solve at period 5, keeping the previous GP
+single value GP: non-finite solve at period 4, keeping the previous GP
+single value GP: non-finite solve at period 3, keeping the previous GP
+single value GP: non-finite solve at period 2, keeping the previous GP
+single value GP: non-finite solve at period 1, keeping the previous GP
+it  11  train  141.7s  gain honest -97.435%  clairvoyant 43.106%  MFAX expl 8.8867  K100 28.63  change 0.1802  CE all 7.305% end 30.84%  LoM R2 -6.499351 max err 138.235%
+it  12  train  151.9s  gain honest 50.115%  clairvoyant 55.807%  MFAX expl 5.0776  K100 2.74  change 0.0952  CE all 35.625% end 5.99%  LoM R2 -56.919542 max err 7178.056%
+it  13  train  162.3s  gain honest 12.690%  clairvoyant 14.045%  MFAX expl 2.4426  K100 5.91  change 0.0645  CE all 15.939% end 24.68%  LoM R2 -55.273151 max err 2011.580%
+it  14  train  172.5s  gain honest 3.073%  clairvoyant 3.168%  MFAX expl 0.7012  K100 15.37  change 0.0301  CE all 9.290% end 44.29%  LoM R2 -27.746215 max err 1995.183%
+it  15  train  182.8s  gain honest nan%  clairvoyant nan%  MFAX expl 1.0469  K100 25.39  change 0.0142  CE all nan% end 14.14%  LoM R2 -4.690605 max err 125.518%
+it  16  train  193.1s  gain honest 0.128%  clairvoyant 0.243%  MFAX expl 0.3028  K100 27.50  change 0.0035  CE all 0.197% end 0.27%  LoM R2 0.561451 max err 366.674%
+it  17  train  203.3s  gain honest 0.169%  clairvoyant 0.231%  MFAX expl 0.3631  K100 26.94  change 0.0016  CE all nan% end 0.05%  LoM R2 0.625223 max err 45.518%
+it  18  train  213.5s  gain honest -0.027%  clairvoyant 0.072%  MFAX expl 0.3046  K100 27.31  change 0.0010  CE all 0.050% end 0.03%  LoM R2 0.976925 max err 10.477%
+it  19  train  223.9s  gain honest 0.080%  clairvoyant 0.134%  MFAX expl 0.3183  K100 27.43  change 0.0009  CE all 0.056% end 0.02%  LoM R2 0.975847 max err 49.833%
+Saved to runs/endogenous/gpdp/jepalom_d16_s4

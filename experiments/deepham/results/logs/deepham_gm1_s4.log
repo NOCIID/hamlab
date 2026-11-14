@@ -1,0 +1,18 @@
+Using recurrent policy: True
+start: value fit valid CE error 9.271%  (320.0s)
+step      0  train   320.0s  loss nan  gain clairvoyant 426.323%  MFAX expl 41.2185  CE all 54.405% end 6.95%  K100 0.82  R2(K|Q) 0.984 R2(t|Q) 0.069
+step   1000  train   527.9s  loss 13.4954  gain clairvoyant 10.423%  MFAX expl 2.2754  CE all 6.029% end 28.75%  K100 20.26  R2(K|Q) 0.977 R2(t|Q) 0.193
+step 2000: value refit, valid CE error 6.576%
+step   2000  train  1076.5s  loss 10.9035  gain clairvoyant 4.494%  MFAX expl 1.0357  CE all 3.864% end 26.79%  K100 25.37  R2(K|Q) 0.978 R2(t|Q) 0.005
+step   3000  train  1293.5s  loss 10.9167  gain clairvoyant 2.374%  MFAX expl 0.6438  CE all 1.420% end 9.15%  K100 26.36  R2(K|Q) 0.020 R2(t|Q) 0.364
+step 4000: value refit, valid CE error 6.677%
+step   4000  train  1829.6s  loss 10.8072  gain clairvoyant 1.522%  MFAX expl 0.5278  CE all 0.623% end 3.36%  K100 26.66  R2(K|Q) 0.208 R2(t|Q) 0.245
+step   5000  train  2042.3s  loss 10.7923  gain clairvoyant 0.969%  MFAX expl 0.4505  CE all 0.429% end 2.39%  K100 27.61  R2(K|Q) 0.496 R2(t|Q) 0.139
+step 6000: value refit, valid CE error 9.017%
+step   6000  train  2618.4s  loss 10.7536  gain clairvoyant 0.819%  MFAX expl 0.4157  CE all 0.290% end 1.24%  K100 26.82  R2(K|Q) 0.541 R2(t|Q) 0.095
+step   7000  train  5358.1s  loss 10.7968  gain clairvoyant 0.666%  MFAX expl 0.3917  CE all 0.250% end 1.19%  K100 27.57  R2(K|Q) 0.685 R2(t|Q) 0.030
+step 8000: value refit, valid CE error 4.404%
+step   8000  train  5871.4s  loss 10.8019  gain clairvoyant 0.508%  MFAX expl 0.3680  CE all 0.198% end 0.85%  K100 27.48  R2(K|Q) 0.750 R2(t|Q) 0.008
+step   9000  train  6071.9s  loss 10.7925  gain clairvoyant 0.440%  MFAX expl 0.3591  CE all 0.158% end 0.57%  K100 27.85  R2(K|Q) 0.766 R2(t|Q) 0.002
+step  10000  train  6281.4s  loss 10.7786  gain clairvoyant 0.389%  MFAX expl 0.3567  CE all 0.136% end 0.37%  K100 27.81  R2(K|Q) 0.775 R2(t|Q) 0.000
+Saved to runs/endogenous/deepham/deepham_gm1_s4

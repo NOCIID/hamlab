@@ -1,0 +1,7 @@
+zkt         fit    5.2s | share err train 0.0003 held-out 0.0006 | CE loss held-out t0 0.030% all 0.007%
+zk          fit    5.0s | share err train 0.0081 held-out 0.0087 | CE loss held-out t0 0.615% all 0.760%
+zkh_fixed   fit    5.9s | share err train 0.0004 held-out 0.0015 | CE loss held-out t0 0.030% all 0.038% | date R2 0.953
+zkh         fit    5.2s | share err train 0.0003 held-out 0.0005 | CE loss held-out t0 0.028% all 0.004% | date R2 1.000
+zkh_random  fit    4.8s | share err train 0.0004 held-out 0.0006 | CE loss held-out t0 0.028% all 0.005% | date R2 0.999
+h           fit    4.9s | share err train 0.0003 held-out 0.0005 | CE loss held-out t0 0.029% all 0.005% | date R2 1.000
+consistency: max |public-path inputs - fitted inputs| = 5.960464477539062e-07

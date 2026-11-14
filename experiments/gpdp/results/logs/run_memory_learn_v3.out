@@ -1,0 +1,23 @@
+=== gpdp_memlearn_v3_zkh_s0  (13:23:39)
+    done in 283s
+=== gpdp_memlearn_v3_zkh_s1  (13:28:22)
+    done in 282s
+=== gpdp_memlearn_v3_zkh_s2  (13:33:04)
+    done in 284s
+=== gpdp_memlearn_v3_zkh_s3  skipped (done)
+=== gpdp_memlearn_v3_zkh_s4  (13:37:48)
+    done in 284s
+=== gpdp_memlearn_v3_h_s0  (13:42:32)
+    done in 278s
+=== gpdp_memlearn_v3_h_s1  (13:47:10)
+    done in 280s
+=== gpdp_memlearn_v3_h_s2  (13:51:50)
+    done in 339s
+=== gpdp_memlearn_v3_h_s3  (13:57:29)
+    done in 294s
+=== gpdp_memlearn_v3_h_s4  skipped (done)
+=== memlearn_v3_evaluate  (14:02:23)
+    done in 212s
+=== memlearn_v3_relative_errors  (14:05:55)
+    done in 104s
+all done

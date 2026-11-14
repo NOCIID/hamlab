@@ -1,0 +1,25 @@
+=== gpdp_memlearn_zkh_s0  (12:07:42)
+    done in 282s
+=== gpdp_memlearn_zkh_s1  (12:12:24)
+    done in 284s
+=== gpdp_memlearn_zkh_s2  (12:17:08)
+    done in 283s
+=== gpdp_memlearn_zkh_s3  (12:21:51)
+    done in 285s
+=== gpdp_memlearn_zkh_s4  (12:26:36)
+    done in 287s
+=== gpdp_memlearn_h_s0  (12:31:23)
+    done in 282s
+=== gpdp_memlearn_h_s1  (12:36:05)
+    done in 282s
+=== gpdp_memlearn_h_s2  (12:40:47)
+    done in 280s
+=== gpdp_memlearn_h_s3  (12:45:27)
+    done in 278s
+=== gpdp_memlearn_h_s4  (12:50:05)
+    done in 277s
+=== memlearn_evaluate  (12:54:42)
+    done in 214s
+=== memlearn_relative_errors  (12:58:16)
+    done in 107s
+all done

@@ -1,0 +1,22 @@
+it   0  train   27.8s  gain honest 21.391%  clairvoyant 21.566%  MFAX expl nan  K100 12.77  change 0.0479  CE all 12.572% end 41.31%  LoM R2 -0.340274 max err 17.714%
+Using recurrent policy: True
+it   1  train   38.3s  gain honest nan%  clairvoyant nan%  MFAX expl 0.5001  K100 16.42  change 0.0338  CE all nan% end 37.35%  LoM R2 -14.080678 max err 411.076%
+it   2  train   48.4s  gain honest nan%  clairvoyant nan%  MFAX expl 1.0511  K100 12.67  change 0.0373  CE all nan% end 31.75%  LoM R2 -30.240397 max err 43663.163%
+it   3  train   58.6s  gain honest 1.197%  clairvoyant 1.262%  MFAX expl 0.4561  K100 19.77  change 0.0149  CE all 3.632% end 14.06%  LoM R2 -52.702365 max err 13885.555%
+it   4  train   69.1s  gain honest nan%  clairvoyant nan%  MFAX expl 0.3449  K100 28.78  change 0.0114  CE all nan% end 15.62%  LoM R2 0.010547 max err 114.087%
+it   5  train   79.4s  gain honest -0.060%  clairvoyant 0.084%  MFAX expl 0.3105  K100 26.92  change 0.0035  CE all 0.271% end 1.05%  LoM R2 0.635895 max err 186.389%
+it   6  train   89.8s  gain honest -0.013%  clairvoyant 0.228%  MFAX expl 0.3388  K100 27.46  change 0.0019  CE all 0.064% end 0.06%  LoM R2 0.910737 max err 184.172%
+it   7  train  100.0s  gain honest 0.249%  clairvoyant 0.372%  MFAX expl 0.4006  K100 27.24  change 0.0016  CE all 0.155% end 0.04%  LoM R2 0.837246 max err 150.386%
+it   8  train  110.5s  gain honest 0.160%  clairvoyant 0.216%  MFAX expl 0.3703  K100 27.08  change 0.0021  CE all 0.117% end 0.07%  LoM R2 0.885835 max err 52.593%
+it   9  train  120.7s  gain honest -0.007%  clairvoyant 0.062%  MFAX expl 0.3031  K100 27.45  change 0.0010  CE all 0.046% end 0.02%  LoM R2 0.985109 max err 23.539%
+it  10  train  131.1s  gain honest 0.002%  clairvoyant 0.089%  MFAX expl 0.3093  K100 27.48  change 0.0009  CE all 0.049% end 0.02%  LoM R2 0.983476 max err 14.001%
+it  11  train  141.5s  gain honest 0.069%  clairvoyant 0.126%  MFAX expl 0.3201  K100 27.30  change 0.0012  CE all 0.063% end 0.03%  LoM R2 0.945211 max err 20.715%
+it  12  train  151.9s  gain honest 0.001%  clairvoyant 0.063%  MFAX expl 0.3060  K100 27.50  change 0.0009  CE all 0.052% end 0.01%  LoM R2 0.958696 max err 26.528%
+it  13  train  162.4s  gain honest -0.032%  clairvoyant 0.071%  MFAX expl 0.3105  K100 27.39  change 0.0013  CE all 0.069% end 0.03%  LoM R2 0.671728 max err 46.224%
+it  14  train  173.0s  gain honest 0.103%  clairvoyant 0.165%  MFAX expl 0.3353  K100 27.70  change 0.0013  CE all 0.057% end 0.02%  LoM R2 0.987361 max err 17.929%
+it  15  train  183.6s  gain honest 0.116%  clairvoyant 0.170%  MFAX expl 0.3078  K100 27.43  change 0.0007  CE all 0.113% end 0.02%  LoM R2 0.974944 max err 24.502%
+it  16  train  194.3s  gain honest -0.018%  clairvoyant 0.060%  MFAX expl 0.3030  K100 27.23  change 0.0008  CE all 0.061% end 0.01%  LoM R2 0.881517 max err 17.926%
+it  17  train  204.7s  gain honest 0.064%  clairvoyant 0.118%  MFAX expl 0.3178  K100 27.31  change 0.0010  CE all 0.081% end 0.02%  LoM R2 0.905808 max err 15.846%
+it  18  train  215.2s  gain honest 0.002%  clairvoyant 0.066%  MFAX expl 0.3029  K100 27.41  change 0.0007  CE all 0.057% end 0.02%  LoM R2 0.977653 max err 21.405%
+it  19  train  225.8s  gain honest 0.035%  clairvoyant 0.097%  MFAX expl 0.3124  K100 27.45  change 0.0014  CE all 0.075% end 0.02%  LoM R2 0.958141 max err 33.760%
+Saved to runs/endogenous/gpdp/jepalom_d16_s3

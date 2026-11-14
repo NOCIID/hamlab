@@ -1,0 +1,16 @@
+{
+    "python.formatting.provider": "none",
+  
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+  
+    "ruff.path": [
+      "${workspaceFolder}/tools/ruff-wrapper"
+    ],
+  
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    }
+  }

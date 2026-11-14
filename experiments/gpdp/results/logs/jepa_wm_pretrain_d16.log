@@ -1,0 +1,4 @@
+collected 160 economies in 101s
+converged {"K_r2_probe32": 0.99994, "K_r2_probe64": 0.99997, "decode_rel_err_pct_probe32": 0.20308, "decode_rel_err_pct_probe64": 0.14264, "one_step_K_err_pct_jepa_probe32": 0.21219, "one_step_zscore_std_jepa_probe32": 0.53143, "one_step_K_err_pct_jepa_probe64": 0.17969, "one_step_zscore_std_jepa_probe64": 0.75615, "one_step_K_err_pct_K_law_of_motion": 0.00249}
+start_15pct {"K_r2_probe32": 0.99345, "K_r2_probe64": 0.99072, "decode_rel_err_pct_probe32": 0.42022, "decode_rel_err_pct_probe64": 0.38945}
+saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/runs/endogenous/jepa_wm/d16/model.pkl (with probe64)

@@ -1,0 +1,176 @@
+{
+  "report: policy GP (z, K, T - t)": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.027 \u00b1 0.008",
+    "gain_from_deviating_pct": "0.09 \u00b1 0.03",
+    "ce_relerr_t0_pct": "0.08 \u00b1 0.03",
+    "ce_relerr_all_periods_pct": "0.044 \u00b1 0.003",
+    "ce_relerr_by_block_pct": "0.059 \u00b7 0.052 \u00b7 0.043 \u00b7 0.026 \u00b7 0.020 \u00b7 0.011",
+    "policy_relerr_pct": "1.64 \u00b1 0.04",
+    "time_to_converge_s_median": 22.084192791953683,
+    "iterations_to_converge_each": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "time_per_iteration_s": "3.31 \u00b1 0.01",
+    "median_gain_iterations_2_19_pct": 0.07379919931738144,
+    "blowup_iterations_each": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "capital_t100": "27.80 \u00b1 0.02",
+    "capital_t127": "2.95 \u00b1 0.01",
+    "share_t126": "0.582 \u00b1 0.001"
+  },
+  "no date, learned memory: (z, K, h)": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.023 \u00b1 0.003",
+    "gain_from_deviating_pct": "0.07 \u00b1 0.01",
+    "ce_relerr_t0_pct": "0.06 \u00b1 0.01",
+    "ce_relerr_all_periods_pct": "1.125 \u00b1 0.935",
+    "ce_relerr_by_block_pct": "0.065 \u00b7 0.146 \u00b7 0.533 \u00b7 1.786 \u00b7 4.140 \u00b7 8.354",
+    "policy_relerr_pct": "2.48 \u00b1 0.69",
+    "time_to_converge_s_median": 27.800172916031443,
+    "iterations_to_converge_each": [
+      2,
+      6,
+      3,
+      4,
+      3
+    ],
+    "time_per_iteration_s": "3.42 \u00b1 0.05",
+    "median_gain_iterations_2_19_pct": 0.08030192397755487,
+    "blowup_iterations_each": [
+      0,
+      5,
+      2,
+      5,
+      5
+    ],
+    "capital_t100": "27.80 \u00b1 0.11",
+    "capital_t127": "4.44 \u00b1 1.41",
+    "share_t126": "0.481 \u00b1 0.056"
+  },
+  "no date, learned memory: h only": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.023 \u00b1 0.003",
+    "gain_from_deviating_pct": "0.07 \u00b1 0.01",
+    "ce_relerr_t0_pct": "0.07 \u00b1 0.02",
+    "ce_relerr_all_periods_pct": "1.814 \u00b1 1.792",
+    "ce_relerr_by_block_pct": "0.083 \u00b7 0.248 \u00b7 1.063 \u00b7 3.537 \u00b7 7.426 \u00b7 10.234",
+    "policy_relerr_pct": "2.86 \u00b1 0.87",
+    "time_to_converge_s_median": 31.189073501038365,
+    "iterations_to_converge_each": [
+      2,
+      4,
+      7,
+      3,
+      5
+    ],
+    "time_per_iteration_s": "3.32 \u00b1 0.06",
+    "median_gain_iterations_2_19_pct": 0.0678730239096037,
+    "blowup_iterations_each": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "capital_t100": "27.82 \u00b1 0.09",
+    "capital_t127": "3.91 \u00b1 0.45",
+    "share_t126": "0.468 \u00b1 0.073"
+  },
+  "v3 no date, learned memory: (z, K, h)": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.023 \u00b1 0.002",
+    "gain_from_deviating_pct": "0.07 \u00b1 0.01",
+    "ce_relerr_t0_pct": "0.07 \u00b1 0.02",
+    "ce_relerr_all_periods_pct": "0.821 \u00b1 1.354",
+    "ce_relerr_by_block_pct": "0.067 \u00b7 0.157 \u00b7 0.570 \u00b7 1.658 \u00b7 3.204 \u00b7 3.933",
+    "policy_relerr_pct": "2.28 \u00b1 0.87",
+    "time_to_converge_s_median": 27.831431750004413,
+    "iterations_to_converge_each": [
+      3,
+      4,
+      4,
+      3,
+      3
+    ],
+    "time_per_iteration_s": "3.42 \u00b1 0.03",
+    "median_gain_iterations_2_19_pct": 0.07094234208311345,
+    "blowup_iterations_each": [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "capital_t100": "27.79 \u00b1 0.11",
+    "capital_t127": "3.51 \u00b1 0.56",
+    "share_t126": "0.525 \u00b1 0.060"
+  },
+  "v3 no date, learned memory: h only": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.025 \u00b1 0.003",
+    "gain_from_deviating_pct": "0.08 \u00b1 0.02",
+    "ce_relerr_t0_pct": "0.07 \u00b1 0.02",
+    "ce_relerr_all_periods_pct": "1.733 \u00b1 1.530",
+    "ce_relerr_by_block_pct": "0.085 \u00b7 0.243 \u00b7 1.028 \u00b7 3.385 \u00b7 7.081 \u00b7 9.660",
+    "policy_relerr_pct": "2.94 \u00b1 0.90",
+    "time_to_converge_s_median": 23.84044883304159,
+    "iterations_to_converge_each": [
+      2,
+      2,
+      6,
+      2,
+      2
+    ],
+    "time_per_iteration_s": "3.60 \u00b1 0.57",
+    "median_gain_iterations_2_19_pct": 0.07125077556447978,
+    "blowup_iterations_each": [
+      0,
+      4,
+      3,
+      0,
+      0
+    ],
+    "capital_t100": "27.79 \u00b1 0.15",
+    "capital_t127": "4.20 \u00b1 1.24",
+    "share_t126": "0.482 \u00b1 0.073"
+  },
+  "v4a05 no date, learned memory: (z, K, h), alpha 0.5": {
+    "n_runs": 5,
+    "mfax_exploitability_nearest": "0.027 \u00b1 0.014",
+    "gain_from_deviating_pct": "0.07 \u00b1 0.01",
+    "ce_relerr_t0_pct": "0.06 \u00b1 0.01",
+    "ce_relerr_all_periods_pct": "0.519 \u00b1 0.629",
+    "ce_relerr_by_block_pct": "0.053 \u00b7 0.087 \u00b7 0.238 \u00b7 0.774 \u00b7 1.846 \u00b7 3.881",
+    "policy_relerr_pct": "2.30 \u00b1 0.79",
+    "time_to_converge_s_median": 40.52822579300846,
+    "iterations_to_converge_each": [
+      6,
+      7,
+      7,
+      8,
+      7
+    ],
+    "time_per_iteration_s": "3.39 \u00b1 0.03",
+    "median_gain_iterations_2_19_pct": 0.06023130995411741,
+    "blowup_iterations_each": [
+      1,
+      2,
+      2,
+      2,
+      1
+    ],
+    "capital_t100": "27.90 \u00b1 0.24",
+    "capital_t127": "3.82 \u00b1 1.92",
+    "share_t126": "0.520 \u00b1 0.091"
+  }
+}

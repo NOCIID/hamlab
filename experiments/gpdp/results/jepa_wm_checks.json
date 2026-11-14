@@ -1,0 +1,170 @@
+{
+  "run": "runs/endogenous/gpdp/report_singlevgp_a1_s0",
+  "steps": 4000,
+  "rollout": 4,
+  "lam": 0.1,
+  "configs": {
+    "4:64": {
+      "fit_time_s": 62.60106054198695,
+      "final_loss": 0.0012489371001720428,
+      "final_pred_mse": 0.0005762263317592442,
+      "final_sigreg": 0.006727106869220734,
+      "effective_rank": 3.924336893179923,
+      "probes": {
+        "K_linear_r2": 0.7466558913163632,
+        "K_quadratic_r2": 0.9718152189416412,
+        "time_left_linear_r2": 0.7778597569775472,
+        "time_left_quadratic_r2": 0.9811782818264302,
+        "z_linear_r2": 0.09258986329334717,
+        "z_quadratic_r2": 0.11893933706914994
+      },
+      "forecasts": {
+        "0_step_decode_rel_err_pct": 0.36793644540011883,
+        "1_step_mean_rel_err_pct": 0.18570164684206247,
+        "5_step_mean_rel_err_pct": 0.48864949494600296,
+        "20_step_mean_rel_err_pct": 2.255397103726864,
+        "open_loop_t127_rel_err_pct": 132.7877640724182
+      },
+      "policy_gp": {
+        "z_s_tau": {
+          "share_error": 0.0006145259831100702,
+          "share_error_120_126": 0.0016475404845550656,
+          "ce_loss_all_pct": 0.0054128291085362434
+        },
+        "z_K_tau": {
+          "share_error": 0.0008417933713644743,
+          "share_error_120_126": 0.0021193933207541704,
+          "ce_loss_all_pct": 0.01583799161016941
+        },
+        "z_tau": {
+          "share_error": 0.0010481404606252909,
+          "share_error_120_126": 0.0026356647722423077,
+          "ce_loss_all_pct": 0.014041722752153873
+        }
+      }
+    },
+    "4:8": {
+      "fit_time_s": 61.36654466600157,
+      "final_loss": 0.0012991875410079956,
+      "final_pred_mse": 0.00047051627188920975,
+      "final_sigreg": 0.008286711759865284,
+      "effective_rank": 3.869133169950299,
+      "probes": {
+        "K_linear_r2": 0.45150080013859906,
+        "K_quadratic_r2": 0.9223152778776932,
+        "time_left_linear_r2": 0.6732905384276782,
+        "time_left_quadratic_r2": 0.9377223553649501,
+        "z_linear_r2": -0.053926367342426396,
+        "z_quadratic_r2": 0.01417274128143542
+      },
+      "forecasts": {
+        "0_step_decode_rel_err_pct": 0.7194158621132374,
+        "1_step_mean_rel_err_pct": 0.6195218302309513,
+        "5_step_mean_rel_err_pct": 1.1257331818342209,
+        "20_step_mean_rel_err_pct": 3.542160242795944,
+        "open_loop_t127_rel_err_pct": 207.55841732025146
+      },
+      "policy_gp": {
+        "z_s_tau": {
+          "share_error": 0.000629590533208102,
+          "share_error_120_126": 0.0015534332487732172,
+          "ce_loss_all_pct": 0.006198771297931671
+        },
+        "z_K_tau": {
+          "share_error": 0.0008417933713644743,
+          "share_error_120_126": 0.0021193933207541704,
+          "ce_loss_all_pct": 0.01583799161016941
+        },
+        "z_tau": {
+          "share_error": 0.0010481404606252909,
+          "share_error_120_126": 0.0026356647722423077,
+          "ce_loss_all_pct": 0.014041722752153873
+        }
+      }
+    },
+    "2:64": {
+      "fit_time_s": 60.67023266700562,
+      "final_loss": 0.0010801112512126565,
+      "final_pred_mse": 0.0005794134340249002,
+      "final_sigreg": 0.005006978288292885,
+      "effective_rank": 1.9983741372899162,
+      "probes": {
+        "K_linear_r2": 0.3911183623381721,
+        "K_quadratic_r2": 0.5128746612786156,
+        "time_left_linear_r2": 0.11422498190826946,
+        "time_left_quadratic_r2": 0.7786696059064387,
+        "z_linear_r2": 0.005336602517730382,
+        "z_quadratic_r2": 0.06561035670300319
+      },
+      "forecasts": {
+        "0_step_decode_rel_err_pct": 1.4345383271574974,
+        "1_step_mean_rel_err_pct": 0.6317449733614922,
+        "5_step_mean_rel_err_pct": 0.7681613322347403,
+        "20_step_mean_rel_err_pct": 2.113097906112671,
+        "open_loop_t127_rel_err_pct": 157.11451768875122
+      },
+      "policy_gp": {
+        "z_s_tau": {
+          "share_error": 0.000616693461779505,
+          "share_error_120_126": 0.0016408691881224513,
+          "ce_loss_all_pct": 0.00560124684125185
+        },
+        "z_K_tau": {
+          "share_error": 0.0008417933713644743,
+          "share_error_120_126": 0.0021193933207541704,
+          "ce_loss_all_pct": 0.01583799161016941
+        },
+        "z_tau": {
+          "share_error": 0.0010481404606252909,
+          "share_error_120_126": 0.0026356647722423077,
+          "ce_loss_all_pct": 0.014041722752153873
+        }
+      }
+    },
+    "8:64": {
+      "fit_time_s": 59.633109125017654,
+      "final_loss": 0.0020300671458244324,
+      "final_pred_mse": 0.0005815709591843188,
+      "final_sigreg": 0.014484960585832596,
+      "effective_rank": 7.631168990986387,
+      "probes": {
+        "K_linear_r2": 0.8389385491402738,
+        "K_quadratic_r2": 0.9975694125150097,
+        "time_left_linear_r2": 0.9503870459676881,
+        "time_left_quadratic_r2": 0.9993020392210413,
+        "z_linear_r2": 0.15989165805048022,
+        "z_quadratic_r2": 0.4084119712161015
+      },
+      "forecasts": {
+        "0_step_decode_rel_err_pct": 0.25018565356731415,
+        "1_step_mean_rel_err_pct": 0.16094157472252846,
+        "5_step_mean_rel_err_pct": 0.3277769312262535,
+        "20_step_mean_rel_err_pct": 1.1288877576589584,
+        "open_loop_t127_rel_err_pct": 93.12548637390137
+      },
+      "policy_gp": {
+        "z_s_tau": {
+          "share_error": 0.0006090272800065577,
+          "share_error_120_126": 0.0016111907316371799,
+          "ce_loss_all_pct": 0.005612903740257025
+        },
+        "z_K_tau": {
+          "share_error": 0.0008417933713644743,
+          "share_error_120_126": 0.0021193933207541704,
+          "ce_loss_all_pct": 0.01583799161016941
+        },
+        "z_tau": {
+          "share_error": 0.0010481404606252909,
+          "share_error_120_126": 0.0026356647722423077,
+          "ce_loss_all_pct": 0.014041722752153873
+        }
+      }
+    }
+  },
+  "law_of_motion_gp_8_economies": {
+    "1_step_mean_rel_err_pct": 0.0023424349118638986,
+    "5_step_mean_rel_err_pct": 0.009480230012397383,
+    "20_step_mean_rel_err_pct": 0.019961142933803154,
+    "open_loop_t127_rel_err_pct": 0.0418566025776574
+  }
+}

@@ -1,0 +1,31 @@
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_zkh_s0          MFAX expl 0.3062 (1.858%)  nearest-grid 0.0243 (0.147%)  continuous clairvoyant 0.089%  honest 0.029%  grid honest -0.766%  K100 27.8
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_zkh_s1          MFAX expl 0.3069 (1.863%)  nearest-grid 0.0260 (0.157%)  continuous clairvoyant 0.084%  honest 0.022%  grid honest -0.774%  K100 27.6
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_zkh_s2          MFAX expl 0.3035 (1.842%)  nearest-grid 0.0203 (0.122%)  continuous clairvoyant 0.063%  honest 0.003%  grid honest -0.793%  K100 27.9
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_zkh_s3          MFAX expl 0.3038 (1.844%)  nearest-grid 0.0214 (0.129%)  continuous clairvoyant 0.063%  honest 0.003%  grid honest -0.793%  K100 27.8
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_zkh_s4          MFAX expl 0.3023 (1.835%)  nearest-grid 0.0230 (0.139%)  continuous clairvoyant 0.062%  honest 0.002%  grid honest -0.794%  K100 27.8
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_h_s0            MFAX expl 0.3102 (1.883%)  nearest-grid 0.0287 (0.173%)  continuous clairvoyant 0.093%  honest 0.032%  grid honest -0.764%  K100 27.6
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_h_s1            MFAX expl 0.3016 (1.830%)  nearest-grid 0.0254 (0.154%)  continuous clairvoyant 0.064%  honest 0.004%  grid honest -0.792%  K100 27.9
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_h_s2            MFAX expl 0.3049 (1.850%)  nearest-grid 0.0217 (0.131%)  continuous clairvoyant 0.072%  honest 0.012%  grid honest -0.784%  K100 27.8
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_h_s3            MFAX expl 0.3054 (1.853%)  nearest-grid 0.0222 (0.134%)  continuous clairvoyant 0.066%  honest 0.006%  grid honest -0.789%  K100 27.7
+Using recurrent policy: True
+Using recurrent policy: True
+gpdp         gpdp/memlearn_v3_h_s4            MFAX expl 0.3097 (1.880%)  nearest-grid 0.0278 (0.168%)  continuous clairvoyant 0.105%  honest 0.045%  grid honest -0.752%  K100 27.9
+Saved /Users/guillen/Desktop/EPFL/thesis/code/mfax/experiments/gpdp/results/memlearn_v3_evaluate.json
